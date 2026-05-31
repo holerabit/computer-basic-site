@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="media-holera-bit-git" />
+		<meta name="description" content="Where is your data stored? HDD vs. SSD and who makes them?" />
+
+		<title>Storage — SSD, HDD & NVMe | Computer Basics</title>
+
+		<link rel="stylesheet" href="../../../style/pages.css" />
+		<link rel="icon" href="../../../image/favicon.png" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Storage — SSD and HDD.</h1>
+
+			<nav class="pages-contacts-nav">
+				<a href="../../../index.html">←← Home</a>
+				<a href="gpu.html">← Back</a>
+
+				<a href="#hdd-to-ssd">HDD to SSD.</a>
+				<a href="#modern-ssds">Modern SSDs.</a>
+				<a href="#by-manufacture">By Manufacture.</a>
+
+				<a href="../case/power-supply.html">Next →</a> 
+			</nav>
+		</header>
+
+		<main>
+			<section id="hdd-to-ssd">
+				<h2>From Spinning Disks to Silicon: The HDD to SSD Story</h2>
+
+				<article>
+					<h3>Hard Disk Drives: 70 Years of Spinning Platters</h3>
+
+					<p>
+					The hard disk drive was invented by IBM in 1956. The first model, the IBM 350, stored 3.75 MB of data across 50 magnetic disks each 24 inches in diameter, and weighed over a ton. It was leased to businesses for $3,200 per month — purely for enterprise use. The concept was revolutionary: magnetic data stored on rotating platters, read by a mechanical arm with a tiny magnetic head hovering nanometers above the surface.
+					</p>
+
+					<p>
+					Through the 1970s and 1980s, HDDs shrank dramatically. By the mid-1980s, the 3.5-inch form factor that is still used today was standardized. Consumer HDDs in the early 1990s held around 100–500 MB. By 2000, gigabyte-capacity drives were standard. Today, single consumer HDDs hold up to 20 TB, and enterprise drives reach beyond 30 TB using helium-filled enclosures and shingled magnetic recording.
+					</p>
+
+					<p>
+					The fundamental technology has changed surprisingly little. A modern HDD still uses spinning magnetic platters and a moving read/write head — just far more precise, faster, and denser than IBM's 1956 invention. This mechanical nature is both the HDD's strength (cost per gigabyte remains the lowest of any storage technology) and its greatest weakness: moving parts mean noise, vibration, vulnerability to impact, and a mechanical speed ceiling.
+					</p>
+				</article>
+				
+				<article>
+					<h3>Solid State Drives: No Moving Parts</h3>
+
+					<p>
+					The concept of solid-state storage goes back to the 1970s. Early flash memory was used in military and aerospace applications where reliability under physical stress was critical. The first commercial SSD for personal computers appeared in 1991 from SunDisk (later SanDisk) — a 20 MB drive for IBM laptops, costing $1,000.
+					</p>
+
+					<p>
+					Flash memory used in SSDs is called NAND flash, named after the logic gate design used at the transistor level. NAND flash stores data by trapping electrons in floating gate transistors — no magnetism, no moving parts. Data persists without power because the electrons remain trapped even when the drive is off.
+					</p>
+
+					<p>
+					The consumer SSD market really began around 2007–2009. Intel and Samsung launched 2.5-inch SATA SSDs that used the same connector as HDDs but were dramatically faster for everyday tasks. The Samsung 830 (2011) and Intel 520 (2012) showed that SSDs had become reliable enough to replace HDDs as the primary drive. Prices per gigabyte dropped from $3–5 in 2009 to under $0.10 today for mainstream SATA SSDs.
+					</p>
+				</article>
+
+				<div class="ssd-vs-hdd">
+
+					<dl class="dd-pages-ssd-vs-hdd">
+
+						<dt>Sequential Read Speed.</dt>
+						<dd>HDD: 100–200 MB/s</dd>
+						<dd>SSD (SATA): 500–560 MB/s</dd>
+						<dd>SSD (NVMe): 3,000–7,000 MB/s</dd>
+
+						<dt>Random Access Time.</dt>
+						<dd>HDD: 5–10 ms</dd>
+						<dd>SSD (SATA): 0.1 ms</dd>
+						<dd>SSD (NVMe): 0.02 ms</dd>
+
+						<dt>Noise.</dt>
+						<dd>HDD: Audible clicking and spinning</dd>
+						<dd>SSD: Silent</dd>
+
+						<dt>Shock Resistance.</dt>
+						<dd>HDD: Vulnerable when operating</dd>
+						<dd>SSD: Highly resistant</dd>
+
+						<dt>Cost per TB</dt>
+						<dd>HDD: $15–25</dd>
+						<dd>SSD (SATA): $50–80</dd>
+						<dd>SSD (NVMe): $60–100</dd>
+
+						<dt>Lifespan.</dt>
+						<dd>HDD: Mechanical failure risk after 3–5 years</dd>
+						<dd>SSD: TBW (terabytes written) limited, typically 300–600 TBW for consumer drives</dd>
+
+						<dt>Best Use.</dt>
+						<dd>HDD: Mass storage, backups, archives</dd>
+						<dd>SSD: OS drive, applications, games</dd>
+					</dl>
+				</div>
+
+				<article>
+					<h3>How the World Moved from HDD to SSD</h3>
+
+					<p>The transition was not sudden — it took roughly a decade and was driven by falling prices rather than technical superiority alone. SSDs had been faster since their introduction, but the price gap was enormous. In 2010, a 1 TB HDD cost around $50 while a 128 GB SSD cost the same. Capacity-for-capacity, SSDs were 8x more expensive.
+					</p>
+
+					<p>
+					The turning point came gradually. In 2012, a Thailand flooding disaster destroyed major HDD manufacturing plants, causing HDD prices to spike temporarily — which accidentally accelerated SSD adoption. Laptop manufacturers started shipping ultrabooks and thin notebooks with SSDs as the only option since HDDs were too thick and too fragile for slim designs.
+					</p>
+
+					<p>
+					By 2015–2016, SSDs had become standard on new laptops and premium desktops. The introduction of NVMe (Non-Volatile Memory Express) in 2013, which moved SSDs from the SATA interface to the PCIe bus, removed the last bottleneck. NVMe SSDs reached speeds that made SATA SSDs look slow by comparison. By 2020, building a PC without an NVMe SSD as the primary drive felt outdated. HDDs retained their role in mass storage — network-attached storage, surveillance systems, and cold backups — where cost per gigabyte matters more than speed.
+					</p>
+				</article>
+			</section>
+
+
+			<section id="modern-ssds">
+				<h2>Modern SSDs: What Can They Do?</h2>
+
+				<article>
+					<h3>Speed, Tiers, and Form Factors</h3>
+
+					<p>
+					Modern SSDs fall into two main categories by interface: SATA and NVMe. SATA SSDs use the same connector as old HDDs and are capped at around 550 MB/s sequential read — fast enough for general use but a bottleneck compared to NVMe. NVMe SSDs connect directly to the PCIe bus via an M.2 slot or PCIe card.
+					</p>
+
+					<p>
+					Current PCIe Gen 4 NVMe drives (mainstream as of 2025) reach 5,000–7,000 MB/s sequential read. PCIe Gen 5 drives push beyond 10,000–14,000 MB/s, though real-world benefits over Gen 4 are modest for most tasks — the bottleneck shifts to the software and file system at those speeds.
+					</p>
+
+					<p>
+					NAND flash comes in several types affecting performance and longevity. SLC (Single Level Cell) stores one bit per cell — fast, durable, expensive, used in enterprise. MLC (Multi Level Cell, 2 bits) balances performance and cost. TLC (Triple Level Cell, 3 bits) is the current consumer standard — good performance, reasonable endurance. QLC (Quad Level Cell, 4 bits) maximizes density and lowers cost but writes slower and wears faster — best for read-heavy workloads like game storage.
+					</p>
+
+					<p>
+					DRAM cache is another key differentiator. Higher-end SSDs include a small DRAM chip that stores a map of the drive's contents, dramatically speeding up random access. Budget SSDs use HMB (Host Memory Buffer), borrowing system RAM instead. The difference matters most under sustained workloads — copying large files or running a database.
+					</p>
+				</article>
+
+				<article>
+					<h3>Who Makes SSDs?</h3>
+
+					<p>
+					The SSD market is shaped by a handful of companies that both make the NAND flash chips and design complete drives. Samsung is the undisputed leader — their 870 EVO (SATA) and 990 Pro (NVMe) are consistently among the top reviewed consumer drives. Samsung manufactures their own NAND, their own controllers, and their own DRAM — full vertical integration gives them exceptional quality control.
+					</p>
+
+					<p>
+					SK Hynix produces NAND used in many drives and sells their own Platinum P41 and Gold P31 series, which consistently earn top marks in independent reviews for their efficiency and endurance. Western Digital (WD) produces NAND and sells drives under both the WD Blue/Black/Red series and the SanDisk brand. Their WD Black SN850X is among the fastest consumer PCIe Gen 4 drives available.
+					</p>
+
+					<p>
+					Crucial (Micron) offers reliable, well-priced drives with strong endurance ratings. Seagate, traditionally known for HDDs, has expanded into SSDs with their FireCuda line aimed at gamers. Corsair and Kingston design drives using flash from the major manufacturers and sell them under their own brands, often targeting enthusiasts.
+					</p>
+				</article>
+			</section>
+
+
+			<section id="by-manufacture">
+				<h2>What Each Manufacturer Brought to SSDs</h2>
+				
+				<div class="table-big-storage">
+
+					<div class="samsung-dev-table">
+						<h3>Samsung — The Benchmark</h3>
+
+						<table class="pages-table storage-samsung-table">
+							<thead>
+								<tr>
+									<th>Year</th>
+									<th>Product / Technology</th>
+									<th>Contribution</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>2006</td>
+									<td>First NAND SSD for laptops</td>
+									<td>Brought flash storage to consumer notebooks</td>
+								</tr>
+
+								<tr>
+									<td>2011</td>
+									<td>Samsung 830</td>
+									<td>Proved SSDs were reliable for mainstream use</td>
+								</tr>
+
+								<tr>
+									<td>2013</td>
+									<td>Samsung 840 EVO (TLC)</td>
+									<td>Popularized TLC NAND in consumer SSDs</td>
+								</tr>
+
+								<tr>
+									<td>2015</td>
+									<td>Samsung 950 Pro</td>
+									<td>First consumer NVMe M.2 SSD widely available</td>
+								</tr>
+
+								<tr>
+									<td>2021</td>
+									<td>Samsung 980 Pro</td>
+									<td>Defined PCIe Gen 4 performance standard</td>
+								</tr>
+
+								<tr>
+									<td>2023</td>
+									<td>Samsung 990 Pro</td>
+									<td>Best-in-class endurance and consistency</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="wd-dev-table">
+						<h3>WD / SanDisk — The Innovator</h3>
+
+						<table class="pages-table storage-table-wd">
+							<thead>
+								<tr>
+									<th>Year</th>
+									<th>Product / Technology</th>
+									<th>Contribution</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>2016</td>
+									<td>WD Blue 3D NAND</td>
+									<td>Popularized 3D NAND stacking for cost reduction</td>
+								</tr>
+
+								<tr>
+									<td>2018</td>
+									<td>WD Black NVMe</td>
+									<td>Brought WD into serious NVMe performance competition</td>
+								</tr>
+
+								<tr>
+									<td>2020</td>
+									<td>WD Black SN850</td>
+									<td>Among the first top-tier PCIe Gen 4 consumer drives</td>
+								</tr>
+
+								<tr>
+									<td>2022</td>
+									<td>WD Black SN850X</td>
+									<td>Added game mode cache for console and PC gaming</td>
+								</tr>
+
+								<tr>
+									<td>2016</td>
+									<td>SanDisk Extreme Portable</td>
+									<td>Pioneered the rugged portable SSD category</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="hynix-dev-table">
+						<h3>SK Hynix — The Underrated Performer</h3>
+
+						<table class="pages-table storage-table-hynix">
+							<thead>
+								<tr>
+									<th>Year</th>
+									<th>Product / Technology</th>
+									<th>Contribution</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>2021</td>
+									<td>Gold P31</td>
+									<td>Exceptionally power-efficient SATA SSD</td>
+								</tr>
+
+								<tr>
+									<td>2021</td>
+									<td>Platinum P41</td>
+									<td>Set new standard for PCIe Gen 4 efficiency</td>
+								</tr>
+
+								<tr>
+									<td>2022</td>
+									<td>NAND for Apple M2</td>
+									<td>Supplied flash for Apple's highest-volume products</td>
+								</tr>
+
+								<tr>
+									<td>2024</td>
+									<td>Platinum P51</td>
+									<td>PCIe Gen 5 drive with strong thermal performance</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="crucial-dev-table">
+						<h3>Crucial — The Reliable Choice</h3>
+
+						<table class="pages-table storage-table-crucial">
+							<thead>
+								<tr>
+									<th>Year</th>
+									<th>Product / Technology</th>
+									<th>Contribution</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>2012</td>
+									<td>Crucial M4</td>
+									<td>One of the earliest reliable affordable SSDs</td>
+								</tr>
+
+								<tr>
+									<td>2017</td>
+									<td>Crucial MX500</td>
+									<td>Long-running bestseller for budget</td>
+								</tr>
+
+								<tr>
+									<td>2021</td>
+									<td>Crucial P5 Plus</td>
+									<td>Competitive PCIe Gen 4 at accessible price</td>
+								</tr>
+
+								<tr>
+									<td>2023</td>
+									<td>Crucial T700</td>
+									<td>First consumer PCIe Gen 5 drive to market</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<article>
+					<h3>Which Storage Should You Buy in 2025?</h3>
+
+					<p>
+					For your primary drive — where your OS and applications live — a PCIe Gen 4 NVMe SSD is the right answer for almost everyone. The speed difference over SATA is real and noticeable in boot times, application loading, and game level streaming. The price difference has largely disappeared: Gen 4 NVMe drives now cost nearly the same as SATA.
+					</p>
+
+					<p>
+					Specific recommendations depend on budget. For most users, the WD Black SN850X or Samsung 990 Pro are the premium choices with excellent endurance. The Crucial P3 Plus or SK Hynix P41 offer better value without sacrificing much real-world performance. Avoid QLC drives as your primary OS drive — their write performance degrades under sustained load.
+					</p>
+
+					<p>
+					Keep HDDs for mass storage if you have large media libraries, game archives, or backup needs. A 4–8 TB HDD alongside a fast NVMe SSD is still the most cost-effective storage setup for a desktop PC. For laptops where space is limited and a single drive must do everything, prioritize a high-endurance TLC NVMe SSD with at least 1 TB.
+					</p>
+
+					<p>
+					PCIe Gen 5 drives exist and are fast — over 10 GB/s — but they run hot, require active cooling, and the real-world benefit over Gen 4 is minimal for everyday use. Unless you work with very large files professionally, Gen 4 is the sweet spot for 2025.
+					</p>
+				</article>
+			</section>
+		</main>
+
+		<footer>
+			<p>Made by media-holera-bit-git · Computer Basics</p>
+			<a href="../../../contact.html">Contact</a>
+			<a href="gpu.html">← Back to the Previous topic</a>
+			<a href="../../../index.html">←← Back to Home</a>
+			<a href="../case/power-supply.html">Next team →</a>
+		</footer>
+	</body>
+</html>
+

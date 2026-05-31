@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="media-holera-bit-git" />
+		<meta name="description" content="History of RAM, how it works, and a comparison of DDR3, DDR4 and DDR5." />
+
+		<title>RAM — Random Access Memory | Computer Basics</title>
+
+		<link rel="stylesheet" href="../../../style/pages.css"/>
+		<link rel="icon" href="../../../image/favicon.png"/>
+	</head>
+
+	<body>
+		<header>
+			<h1> RAM — Random Access Memory </h1>
+
+			<nav class="pages-contacts-nav">
+				<a href="../../../index.html">←← Home</a>
+				<a href="../cpu-and-mother-board/mother-board.html">← Back</a>
+
+				<a href="#overview">Overviwe.</a>
+
+				<a href="gpu.html">Next →</a> 
+			</nav>
+		</header>
+
+		<main>
+			<section id="overview">
+				<h2>What is RAM and How Did It Evolve?</h2>
+
+				<article>
+					<h3>From Magnetic Cores to Modern Chips</h3>
+
+					<p>
+					RAM was born out of a simple problem: the CPU works millions of times faster than any storage drive. Without a fast temporary workspace, the processor would spend most of its time waiting. Early computers in the 1950s used magnetic core memory — tiny rings of magnetic material threaded on wires. It was expensive, slow by today's standards, and required skilled hands to build. One megabyte of core memory in the 1960s cost thousands of dollars and took up significant physical space.
+					</p>
+
+					<p>
+					The shift to semiconductor RAM in the late 1960s and 1970s changed everything. Intel actually started as a memory company — their first product in 1969 was the 3101, a 64-bit SRAM chip. Through the 1980s, DRAM became the standard for personal computers, with capacities growing from kilobytes to megabytes. Windows 95 required 4 MB of RAM — today a single browser tab can use more than that.
+					</p>
+
+					<p>
+					RAM is volatile memory, meaning it loses all data the moment power is cut. Its entire purpose is speed: it holds the operating system's active processes, open applications, and currently used files so the CPU can access them in nanoseconds rather than milliseconds.
+					</p>
+				</article>
+
+				<article>
+					<h3>What the Numbers Actually Mean</h3>
+
+					<p>
+					Modern RAM comes with several specifications that directly affect system performance. The most visible is capacity, measured in gigabytes — 16 GB is the current minimum for a comfortable experience, 32 GB is the sweet spot for gaming and productivity, and 64 GB or more is for video editing, 3D work, or virtual machines.
+					</p>
+
+					<p>
+					Speed is measured in MHz or MT/s (megatransfers per second). DDR5 RAM commonly runs at 4800 to 7200 MT/s. Higher speed means more data moved per second, which benefits CPU-heavy tasks. However, the gains are often modest in gaming — latency matters more there.
+					</p>
+
+					<p>
+					Latency is expressed as CL timings, for example CL36 or CL40. Lower CL numbers mean the RAM responds faster to requests. There is a balance to strike: very fast DDR5 with high latency can perform worse than slightly slower DDR5 with tighter timings.
+					</p>
+
+					<p>
+					The current standard is DDR5, which replaced DDR4. DDR stands for Double Data Rate. Each generation doubles the potential bandwidth while reducing voltage, making it more power-efficient. DDR5 also introduced on-die ECC (error correction) and moves the power management chip from the motherboard to the RAM module itself.
+					</p>
+				</article>
+
+				<article>
+					<h3>Who Makes RAM?</h3>
+
+					<p>
+					Three companies dominate the global RAM market. Samsung, headquartered in South Korea, is the world's largest memory chip manufacturer. They produce the NAND flash and DRAM used not only in consumer RAM sticks but also in phones, servers, and SSDs worldwide. Their consumer RAM line is often sold under the brand name Samsung or found inside modules from other brands.
+					</p>
+
+					<p>
+					SK Hynix, also South Korean, is the second largest DRAM producer globally. They supply memory chips to many brands and sell their own Platinum and Titanium series directly to consumers. Their chips are frequently found inside high-end DDR5 kits from brands like G.Skill and Corsair.
+					</p>
+
+					<p>
+					Beyond these three chip makers, many brands buy chips and design their own PCBs and heat spreaders: Corsair, G.Skill, Kingston, TeamGroup, and ADATA are among the most popular in the PC enthusiast market.
+					</p>
+				</article>
+
+				<div class="table-ddr">
+					<h3>RAM Across Generations</h3>
+
+					<table class="pages-table gen-table">
+						<thead>
+							<tr>
+								<th>Specification</th>
+								<th>DDR3 (3rd gen)</th>
+								<th>DDR4 (4th gen)</th>
+								<th>DDR5 (5th gen)</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Release Year</td>
+								<td>2007</td>
+								<td>2014</td>
+								<td>2020</td>
+							</tr>
+							<tr>
+								<td>Common Speed</td>
+								<td>1333–2133 MHz</td>
+								<td>2133–3600 MHz</td>
+								<td>4800–7200 MT/s</td>
+							</tr>
+							<tr>
+								<td>Voltage</td>
+								<td>1.5V</td>
+								<td>1.2V</td>
+								<td>1.1V</td>
+							</tr>
+							<tr>
+								<td>Max per module</td>
+								<td>8 Gb</td>
+								<td>32 Gb</td>
+								<td>64 Gb</td>
+							</tr>
+							<tr>
+								<td>Channels</td> 
+								<td colspan="2">Single die</td>
+								<td>Dual subchannel</td>
+							</tr>
+							<tr>
+								<td>Still relevant?</td>
+								<td>Rarely</td>
+								<td>Yes (older builds)</td>
+								<td>Current standard</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>Made by media-holera-bit-git · Computer Basics</p>
+			<a href="../../../contact.html">Contact</a>
+			<a href="../cpu-and-mother-board/mother-board.html">← Back to the Previous topic</a>
+			<a href="../../../index.html">←← Back to Home</a>
+			<a href="gpu.html">Next team →</a>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,260 @@
+html {
+	/*Color for text and background*/
+	color: #eaeaea;
+	background-color: #0d0d0d;
+
+  /*Font*/
+  font-family: 'Courier New', monospace;
+}
+
+/*Header and a in main-nav*/
+header{
+	/*Size*/
+	width: 100%;
+	padding: 1%;
+
+	/*Color for nav(main) and border*/
+	border-bottom: 4px solid #999999;
+	background-color: #1a1a1a;
+
+	/*Display*/
+	display: flex;
+
+  text-align: center;
+  align-items: center;
+  
+	/*position*/
+	position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-direction: column;
+
+  /*Smoothness*/
+  transition: border-color 0.5s ease;
+}
+
+header:hover {
+  border-color: #cccccc;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-nav a {
+	color: #5e5e5e;
+}
+
+.main-nav a::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.main-nav a:hover {
+	color: #3e3e3e;
+}
+
+.main-nav a:focus {
+  color: #999999;
+}
+
+/*Main style*/
+main {
+  /*Size*/  
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+
+  /*Border*/
+  border-left: 5px solid #999999;
+  padding-left: 50px;
+}
+
+
+/*For all link*/
+
+a {
+  /*Display*/
+  display: inline-block;
+
+  /*Spacing and indentation*/
+  margin-top: 12px;
+
+  /*Color*/
+  color: #7a7a7a;
+
+  /*Smoothness*/
+  transition: color 0.5s ease;
+
+  /*Decorration*/
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4a4a4a;
+}
+
+a:hover {
+  color: #888888;
+}
+
+/*Tab focuse*/
+a:focus {
+  /*Color*/
+  color: #ffffff;
+
+  /*Border*/
+  outline: none;
+}
+
+/*Heading style*/
+h1 {
+  /*Color*/
+  color: #ffffff;
+
+  /*Size*/
+  font-size: 2.5rem;
+
+  /*Text style*/
+  letter-spacing: 9px;
+  text-transform: uppercase;
+}
+
+h2 {
+  /*Color*/
+  color: #cccccc;
+
+  /*Size*/
+  font-size: 1.2rem;
+
+  /*Border*/
+  border-bottom: 4px solid #999999;
+  padding-bottom: 20px;
+}
+
+h3 {
+  /*Color*/
+  color: #999999;
+
+  /*Size*/
+  font-size: 1.1rem;
+}
+
+h1, h2, h3 {
+  /*Indents*/
+  margin-bottom: 50px;
+}
+
+h2, h3 {
+  /*Letter spacing*/
+  letter-spacing: 5px;
+
+  /*Finding a String*/
+  margin-top: 30px;
+  line-height: 40px;
+
+  /*Text*/
+  font-weight: normal;
+}
+
+/*Before and after elementes*/
+h1::after{
+  content: " 🖥️";
+}
+
+h2::before {
+  content: "// ";
+}
+
+h3::before {
+  content: ">";
+}
+
+/*p*/
+p {
+  /*Spacing and indentation*/
+  line-height: 1.6rem;
+  margin-bottom: 20px;
+
+  /*Size*/
+  max-width: 200px;
+}
+
+header p {
+  max-width: none;
+}
+
+.p-base {
+  max-width: none;
+} 
+
+.p-base p {
+  color: #cccccc;
+}
+
+/*article*/
+article {
+  /*Spacing and indentation*/
+  margin-bottom: 20px;
+  padding: 12px;
+
+  /*Border*/
+  border: 4px solid #777777;
+
+  /*Color*/
+  background-color: #1a1a1a;
+
+  /*Smoothness*/
+  transition: border-color 0.5s ease;
+}
+
+article:hover {
+  border-color: #aaaaaa;
+}
+
+/*footer*/
+footer {
+  /*Line*/
+  border-top: 4px solid #999999;
+
+  /*Spacing and indentation*/
+  padding: 10px;
+
+  /*Size*/
+  font-size: 0.8rem;
+
+  /*Background color*/
+  background-color: #1a1a1a;
+  
+  /*Text and Color text*/
+  text-align: center;
+  color: #4a4a4a;
+
+  /*Smoothness*/
+  transition: border-color 0.5s ease;
+}
+
+footer:hover {
+  border-color: #cccccc;
+}
+
+footer a {
+    font-size: 1rem;
+    color: #666666;
+}
+
+footer a:visited {
+    color: #666666;
+}
+
+section {  
+  /*Spacing and indentation*/
+  margin-bottom: 150px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}

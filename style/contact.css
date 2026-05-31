@@ -1,0 +1,204 @@
+/*
+ * HTML and Body
+ * */
+html {
+	/*Color for text and background*/
+	color: #eaeaea;
+	background-color: #0d1f0d;
+  /*Font*/
+  font-family: 'Courier New', monospace;
+}
+
+body {
+  /*Avoiding gaps*/
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+ *Header
+ * */
+
+header {
+  /*Back color*/
+  background-color: #1f0d0d;
+  /*Text style*/
+  padding: 65px;
+  /*Display*/
+  display: flex;
+  flex-direction: column;
+  /*Style Text*/
+  justify-content: center;
+  text-align: center;
+  /*Border*/
+  border-bottom: 6px groove #c0392b;
+  /*Smoothness*/
+  transition: 
+  border-bottom 2s ease, 
+  opacity 1.2s ease;
+}
+
+/*Hover Header*/
+header:hover {
+  border-bottom: 8px groove #1a0a0a;
+  opacity: 0.8;
+}
+
+/*Main Text Header*/
+header p {
+  color: #dc143c;
+}
+
+/*Link Header*/
+header a { /*Main Link Header*/
+  color: #ff6b8a;
+}
+
+header a:visited { /*Visit Link Header*/
+  color: #ff4d6d;
+}
+
+
+/*
+ *Main
+ * */
+
+main {
+  /*Back color*/
+  background-color: #1a2a4a;
+  /*Display*/
+  display: flex;
+  /*Element style*/
+  justify-content: center;
+  /*Size*/
+  min-height: 260px;
+  /*Border*/
+  border-bottom: 10px ridge #1a2a4a;
+  border-top: 6px solid #003366;
+  /*Soomthness*/
+  transition: 
+  border-bottom 2s ease, 
+  border-top 2s ease, 
+  opacity 1.2s ease;
+}
+
+/*Hover Main*/
+main:hover {
+  border-top: 8px solid #0a0a1a;
+  border-bottom: 12px ridge #0a0a1a;
+  opacity: 0.8;
+}
+
+/*Link Main*/
+main a { /*Main link "Main"*/
+  color: #c8f5c8;
+  display: grid;
+}
+
+main a:visited { /*Visit Link Main*/
+  color: #b4f0b4;
+}
+
+
+/*
+ *Footer
+ * */
+footer {
+  /*Back color*/
+  background-color: #1a1500;
+  /*Display*/
+  display: grid;
+  /*Element style*/
+  justify-content: center;
+  /*Size*/
+  height: 200px;
+  /*Border*/
+  border-top: 6px solid #b8860b;
+  border-bottom: 8px groove #8b7536;
+  /*Soomthness*/
+  transition: 
+  border-bottom 2s ease, 
+  border-top 2s ease, 
+  opacity 1.2s ease;
+}
+
+/*Hover Footer*/
+footer:hover {
+  border-top: 8px solid #ccaa00;
+  border-bottom: 10px groove #ccaa00;
+  opacity: 0.8;
+}
+
+/*Main Text Footer*/
+footer p {
+  color: #ffb300;
+  text-align: center;
+}
+
+/*Style Mase Text*/
+.made-p::before {
+  content: "/ ";
+}
+
+/*Link Footer*/
+footer a { /*Main Link Footer*/
+  color: #ffd633;
+}
+
+footer a:visited { /*Visit Link Footer*/
+  color: #ffcc00;
+}
+
+
+/*
+ *Heading
+ * */
+
+/*H1*/
+h1 {
+  color: #8b0a1a;
+}
+
+/*Before H1*/
+h1::before {
+  content: "/// ";
+}
+
+/*H2*/
+h2 {
+  color: #90ee90;
+  margin-top: 70px;
+}
+
+/*Before H2*/
+h2::before {
+  content: "// ";
+}
+
+/*
+ *a
+ * */
+
+/*Link a*/
+a {
+  text-decoration: none;
+  transition: color 1.2s ease;
+}
+
+/*Tip Link a*/
+a:hover {
+  color: #444444;
+}
+
+/*Tab Link a*/
+a:focus {
+  color: #ffffff;
+  outline: none;
+}
+
+/*Before Link a*/
+a::before {
+  content: "✅";
+}
+

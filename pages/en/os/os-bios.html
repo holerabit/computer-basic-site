@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="media-holera-bit-git" />
+		<meta name="description" content="A brief history of BIOS & UEFI, and what's the difference?" />
+
+		<title>BIOS & UEFI — Firmware Evolution | Computer Basics</title>
+
+		<link rel="stylesheet" href="../../../style/pages.css" />
+		<link rel="icon" href="../../../image/favicon.png" />
+	</head>
+
+	<body>
+		<header>
+			<h1>BIOS & UEFI — Good tools.</h1>
+
+			<nav class="pages-contacts-nav">
+				<a href="../../../index.html">←← Home</a>
+				<a href="os-history.html">← Back</a>
+
+				<a href="#early-os-bios">Early BIOS.</a>
+        <a href="#uefi-os">UEFI.</a>
+        <a href="#bios-vs-uefi-os">BIOS VS UEFI.</a>
+
+				<a href="os-windows.html">Next →</a> 
+			</nav>
+		</header>
+
+		<main>
+			<section id="early-os-bios">
+				<h2>BIOS: The Original Firmware.</h2>
+
+        <article>
+          <h3>How BIOS Worked</h3>
+
+          <p>
+          When you pressed the power button on any PC from 1981 through the mid-2000s, the first thing that ran was the BIOS. Stored on a small ROM chip soldered to the motherboard, the BIOS was completely independent of any operating system or hard drive. It could run even with no storage connected at all.
+          </p>
+
+          <p>
+          The boot sequence was always the same. First, the BIOS performed the POST — Power-On Self Test — checking that RAM was present and functional, that the CPU was operating correctly, and that essential hardware was detected. A successful POST produced a single beep on most systems. Failed hardware produced specific beep codes that technicians could use to diagnose problems without a screen.
+          </p>
+
+          <p>
+          After POST, the BIOS searched for a bootable device in the configured order — typically floppy drive first, then hard drive, then CD-ROM as optical drives became common. It read the first sector of the bootable device (the Master Boot Record or MBR) and handed control to whatever boot code it found there. From that point, the operating system took over.
+          </p>
+
+          <p>
+          The BIOS setup utility was accessed by pressing a specific key during the brief window after POST. Once inside, users could configure the boot order, set the system date and time, control CPU and memory settings, enable or disable integrated peripherals, and set passwords. Despite its importance, the interface was entirely keyboard-driven and looked identical whether you were using a $500 budget machine or a $5,000 workstation.
+          </p>
+        </article>
+
+        <article>
+          <h3>Why BIOS Had to Die</h3>
+
+          <p>
+          The original IBM PC BIOS was written in 16-bit real mode — the operating mode of the Intel 8088 processor from 1981. Every BIOS chip shipped for the next 25 years maintained compatibility with this 1981 standard. This backward compatibility was both BIOS's greatest strength and its fatal weakness.
+          </p>
+
+          <p>
+          The most visible limitation was the MBR partition scheme. The Master Boot Record could only describe partitions up to 2 TB in size and could only support four primary partitions. As hard drives grew beyond 2 TB and users needed more flexible partitioning, this became a serious constraint.
+          </p>
+
+          <p>
+          The BIOS also had no understanding of networking, no graphical capability, no mouse support, and no way to boot from USB drives without special workarounds. Security features were primitive — the boot process had no way to verify that the bootloader had not been tampered with. Rootkits could embed themselves in the MBR and be virtually undetectable.
+          </p>
+
+          <p>
+          Perhaps most significantly, the BIOS was 16-bit code running on 64-bit hardware. Modern CPUs had to temporarily drop into a legacy compatibility mode just to run the BIOS — a process that added time and complexity to every boot. By the mid-2000s, Intel had developed a replacement.
+          </p>
+        </article>
+			</section>
+
+
+      <section id="uefi-os">
+        <h2>UEFI: The Modern Replacement</h2>
+
+        <article>
+          <h3>UEFI — Unified Extensible Firmware Interface</h3>
+
+          <p>
+          UEFI (Unified Extensible Firmware Interface) began as EFI, developed by Intel in the late 1990s for their Itanium server processors. The Itanium was a 64-bit architecture completely incompatible with the 16-bit BIOS, making a new firmware standard necessary. EFI became UEFI in 2005 when it was transferred to the UEFI Forum — a consortium including Intel, AMD, Microsoft, Apple, and major PC manufacturers.
+          </p>
+
+          <p>
+          UEFI is fundamentally different from BIOS in architecture. It is a complete mini-operating system in its own right — written in C, capable of running network drivers, accessing the internet before the OS loads, supporting a graphical mouse-driven interface, and loading 64-bit code natively. The UEFI specification defines a standard API that operating systems use to interact with hardware during boot, replacing the ad-hoc BIOS calls that OS developers had to work around for decades.
+          </p>
+
+          <p>
+          The most visible change for users is the UEFI setup interface. Modern UEFI implementations from ASUS, MSI, Gigabyte, and others feature full graphical interfaces with mouse support, fan curve editors, RGB lighting controls, and detailed hardware monitoring — all running before any operating system loads.
+          </p>
+        </article>
+
+        <article>
+          <h3>GPT and Secure Boot</h3>
+
+          <p>
+          UEFI introduced two critical technologies alongside the new firmware architecture. The first is GPT — GUID Partition Table — which replaces the MBR partition scheme. GPT supports drives up to 9.4 zettabytes (theoretical maximum), allows up to 128 partitions by default, stores partition data redundantly at both the beginning and end of the disk, and uses unique identifiers (GUIDs) for each partition that prevent conflicts.
+          </p>
+
+          <p>
+          The second is Secure Boot. UEFI Secure Boot maintains a database of cryptographic signatures for trusted bootloaders. When the system boots, UEFI verifies that the bootloader's signature matches an entry in the trusted database. If it does not match — whether because the bootloader is unknown or because it has been modified by malware — UEFI refuses to execute it. This makes the boot process resistant to the rootkit attacks that plagued BIOS systems.
+          </p>
+
+          <p>
+          Secure Boot became controversial when Windows 8 required it in 2012. Linux users initially struggled with Secure Boot because their bootloaders were not in the trusted database. Microsoft eventually provided a signing service for Linux bootloaders, and most major Linux distributions now boot correctly on Secure Boot systems. However, Secure Boot can still be disabled in UEFI settings on most consumer hardware.
+          </p>
+        </article>
+      </section>
+
+
+      <section id="bios-vs-uefi-os">
+        <h2>BIOS vs UEFI: Full Comparison</h2>
+
+        <div class="uefi-vs-bios-os-table">
+          <h3>BIOS vs UEFI</h3>
+
+          <table class="pages-table table-os-uefivsbios">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>BIOS</th>
+                <th>UEFI</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Architecture</td>
+                <td>16-bit real mode</td>
+                <td>32/64-bit</td>
+              </tr>
+
+              <tr>
+                <td>Interface</td>
+                <td>Text only, keyboard</td>
+                <td>Graphical, mouse supported</td>
+              </tr>
+
+              <tr>
+                <td>Max drive size</td>
+                <td>2 TB (MBR limit)</td>
+                <td>9.4 ZB (GPT)</td>
+              </tr>
+
+              <tr>
+                <td>Max partitions</td>
+                <td>4 primary</td>
+                <td>128 (default)</td>
+              </tr>
+
+              <tr>
+                <td>Boot time</td>
+                <td>Slower</td>
+                <td>Faster</td>
+              </tr>
+
+              <tr>
+                <td>Secure Boot</td>
+                <td rowspan="3">No</td>
+                <td>Yes</td>
+              </tr>
+
+              <tr>
+                <td>Network support</td>
+                <td>Yes (PXE boot)</td>
+              </tr>
+
+              <tr>
+                <td>Mouse support</td>
+                <td>Yes</td>
+              </tr>
+
+              <tr>
+                <td>Storage in</td>
+                <td>ROM chip</td>
+                <td>Flash memory (updatable)</td>
+              </tr>
+
+              <tr>
+                <td>First appeared</td>
+                <td>1981</td>
+                <td>2005 (consumer)</td>
+              </tr>
+
+              <tr>
+                <td>Still used?</td>
+                <td>Legacy mode only</td>
+                <td>Current standard</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <article>
+          <h3>BIOS to UEFI: The Invisible Revolution</h3>
+
+          <p>
+          The transition from BIOS to UEFI happened quietly — most users never noticed. Their computers simply got faster boot times and a nicer settings interface. But underneath, the change was profound: 25 years of 16-bit legacy code was replaced with a modern, extensible platform capable of supporting hardware that the original BIOS designers could not have imagined.
+          </p>
+
+          <p>
+          Windows 11 made UEFI with Secure Boot a hard requirement, finally forcing the last BIOS-only machines out of the supported ecosystem. For Linux users, UEFI support is now standard across all major distributions. The BIOS lives on only in legacy compatibility modes for ancient hardware and in the institutional memory of anyone who spent time diagnosing problems with beep codes and jumper settings.
+          </p>
+        </article>
+      </section>
+		</main>
+    <footer>
+      <p>Made by media-holera-bit-git · Computer Basics</p>
+			<a href="../../../contact.html">Contact</a>
+			<a href="os-history.html">← Back to the Previous topic</a>
+			<a href="../../../index.html">←← Back to Home</a>
+			<a href="os-windows.html">Next team →</a>
+    </footer>
+	</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="media-holera-bit-git" />
+		<meta name="description" content="How motherboards work, how to install them, and which to choose." />
+
+		<title>Motherboard — The Heart of Your PC | Computer Basics</title>
+
+		<link rel="stylesheet" href="../../../style/pages.css" />
+		<link rel="icon" href="../../../image/favicon.png" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Motherboard</h1>
+
+			<nav class="pages-contacts-nav">
+				<a href="../../../index.html">←←Home</a>
+				<a href="cpu.html">←Back</a>
+
+				<a href="#how-it-works">How It Works</a>
+				<a href="#installation">Installation</a>
+				<a href="#comparison">Top Boards</a>
+
+				<a href="../memory-and-gpu/ram.html">Next →</a>
+			</nav>
+		</header>
+
+		<main>
+
+			<section id="how-it-works">
+				<h2>Components and Connections</h2>
+
+				<article>
+					<h3>How Does a Motherboard Work?</h3>
+
+					<p>
+						The motherboard is the central hub of any computer. Every single component —
+						CPU, RAM, GPU, storage drives, power supply — connects to it either directly or through cables.
+						Think of it as the nervous system of the computer: it does not do the computing itself,
+						but it makes sure all the parts can communicate with each other.
+					</p>
+
+					<p>
+						At its core, the motherboard contains the chipset — a set of chips that manages data flow
+						between the CPU, memory, and peripherals. It also contains the BIOS/UEFI chip,
+						which is a small piece of firmware that starts up before your operating system
+						and initializes all hardware. Without the BIOS, your computer would not know
+						how to begin booting.
+					</p>
+
+					<p>
+						Key areas of a motherboard include: the CPU socket, RAM slots (DIMM slots),
+						PCIe slots for GPU and expansion cards, M.2 slots for fast NVMe storage,
+						SATA ports for drives, USB headers for front-panel ports, and the 24-pin ATX
+						power connector. Each of these serves a specific role in the system.
+					</p>
+				</article>
+
+				<article id="installation">
+					<h3>How to Properly Install a Motherboard</h3>
+
+					<p>
+						Installing a motherboard correctly is one of the most important steps in building a PC.
+						Mistakes here can damage components or cause the system to not boot at all.
+						Here is the correct order and approach:
+					</p>
+
+					<p>
+						Before touching any component, ground yourself by touching a metal surface or
+						wearing an anti-static wrist strap. Static electricity can silently destroy chips.
+						Always handle the motherboard by its edges, never touch the gold contacts on the bottom.
+					</p>
+
+					<p>
+						Install the CPU, CPU cooler, and RAM onto the motherboard before placing it in the case —
+						it is much easier to work on a flat surface. Then install the I/O shield into the case,
+						screw in the brass standoffs, and carefully lower the motherboard in. Use all the correct
+						screws — standoffs prevent the board from shorting against the metal case.
+					</p>
+
+					<p>
+						Connect power last: the 24-pin ATX cable and the 4 or 8-pin CPU power connector.
+						Then connect SATA cables, front-panel headers (power button, reset, LEDs),
+						and USB headers. Cable management matters — good airflow keeps the system cooler.
+					</p>
+				</article>
+
+				<div class="tips-block">
+					<h3>Useful Tips for Building a PC</h3>
+
+					<ul>
+						<li>Always check CPU and RAM compatibility with your motherboard before buying.</li>
+
+						<li>Use the QVL (Qualified Vendor List) on the motherboard manufacturer's site to find tested RAM.</li>
+
+						<li>Do not overtighten screws — motherboard PCBs can crack.</li>
+
+						<li>Enable XMP/EXPO in BIOS after first boot to run RAM at its advertised speed.</li>
+
+						<li>Update the BIOS before installing a new CPU — older boards may not support newer chips without it.</li>
+
+						<li>If the system does not boot, try with one RAM stick in the correct slot (usually A2).</li>
+
+						<li>Keep the original CPU box — it has the IHS protector useful if you ever need to return the chip.</li>
+					</ul>
+				</div>
+			</section>
+
+
+			<section id="comparison">
+				<h2>Popular Motherboards — Mini Specs</h2>
+
+				<p>
+					Choosing a motherboard depends on your CPU, budget, and what features you need.
+					Below are five widely used boards covering different price points and use cases.
+				</p>
+
+				<div class="boards-overview-table">
+					<h3>Quick Specs: 5 Popular Motherboards</h3>
+
+					<table class="pages-table table-mb-overview">
+						<thead>
+							<tr>
+								<th>Model</th>
+								<th>Socket</th>
+								<th>Chipset</th>
+								<th>RAM Slots</th>
+								<th>Max RAM</th>
+								<th>M.2 Slots</th>
+								<th>Price Range</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>ASUS ROG Strix X670E-E</td>
+								<td>AM5</td>
+								<td>X670E</td>
+								<td>4</td>
+								<td>128 GB</td>
+								<td>5</td>
+								<td>High-end (~$400)</td>
+							</tr>
+							<tr>
+								<td>MSI MAG B650 Tomahawk</td>
+								<td>AM5</td>
+								<td>B650</td>
+								<td>4</td>
+								<td>128 GB</td>
+								<td>2</td>
+								<td>Mid-range (~$180)</td>
+							</tr>
+							<tr>
+								<td>Gigabyte B760M DS3H</td>
+								<td>LGA1700</td>
+								<td>B760</td>
+								<td>2</td>
+								<td>64 GB</td>
+								<td>2</td>
+								<td>Budget (~$90)</td>
+							</tr>
+							<tr>
+								<td>ASUS ProArt Z790-Creator</td>
+								<td>LGA1700</td>
+								<td>Z790</td>
+								<td>4</td>
+								<td>128 GB</td>
+								<td>4</td>
+								<td>Workstation (~$500)</td>
+							</tr>
+							<tr>
+								<td>MSI MEG Z790 ACE</td>
+								<td>LGA1700</td>
+								<td>Z790</td>
+								<td>4</td>
+								<td>192 GB</td>
+								<td>5</td>
+								<td>Enthusiast (~$600)</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<article>
+					<h3>So — What Should You Choose?</h3>
+
+					<p>
+						The honest answer is: buy the cheapest board that has everything you need and nothing you do not.
+						Expensive motherboards offer better power delivery (useful for overclocking), more M.2 slots,
+						faster networking, and better build quality — but for most users building a gaming or work PC,
+						a mid-range B-series board is the sweet spot.
+					</p>
+
+					<p>
+						If you are on AMD, the B650 chipset is the best value in 2024–2025. It supports PCIe 5.0 for storage,
+						works with all Ryzen 7000 and 9000 series CPUs, and boards start around $150.
+						Only go X670/X670E if you need multiple PCIe 5.0 slots or extreme overclocking.
+					</p>
+
+					<p>
+						If you are on Intel, the B760 chipset covers most needs at a lower price.
+						Z790 is only worth it if you plan to overclock your CPU (K-series chips only).
+						With Intel's 13th and 14th gen stability issues now documented, many builders
+						are looking toward AMD AM5 as the safer long-term platform — especially since
+						AMD has committed to AM5 socket support through at least 2027.
+					</p>
+
+					<p>
+						In short: match the chipset to your CPU, check that it has enough M.2 slots for your storage plans,
+						confirm RAM compatibility, and do not overspend on features you will never use.
+					</p>
+				</article>
+			</section>
+		</main>
+
+		<footer>
+			<p>Made by media-holera-bit-git · Computer Basics</p>
+			<a href="cpu.html">← Back to the Previous topic</a>
+			<a href="../../../contact.html">Contact</a>
+			<a href="../../../index.html">←← Back to Home</a>
+			<a href="../memory-and-gpu/ram.html">Next team →</a>
+		</footer>
+	</body>
+</html>

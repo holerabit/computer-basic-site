@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="media-holera-bit-git" />
+		<meta name="description" content="How did modern Windows types appear and what were the old OSs like?" />
+
+		<title>OS History — From First Computers to Windows 95 | Computer Basics</title>
+
+		<link rel="stylesheet" href="../../../style/pages.css" />
+		<link rel="icon" href="../../../image/favicon.png" />
+	</head>
+
+	<body>
+		<header>
+			<h1>History OS — how deep?</h1>
+
+			<nav class="pages-contacts-nav">
+				<a href="../../../index.html">←← Home</a>
+				<a href="os.html">← Back</a>
+
+				<a href="#gen-os-1-3">Generations 1-3.</a>
+        <a href="#gen-os-4">Generations 4.</a>
+        <a href="#first-os-bios">First BIOS(Gen4).</a>
+        <a href="#tables-gen-os">Table Generations.</a>
+
+				<a href="os-bios.html">Next →</a> 
+			</nav>
+		</header>
+
+		<main>
+			<section id="gen-os-1-3">
+				<h2>The First Computers and Early Operating Systems.</h2>
+
+        <article>
+          <h3>First Generation: No OS At All</h3>
+
+          <p>
+          The first computers had no operating system in any recognizable sense. Machines like the ENIAC (1945) and the Manchester Mark 1 (1948) were programmed directly by physically rewiring connections or setting switches. Each program required the machine to be manually reconfigured. There was no software layer between the programmer and the hardware — the programmer and the operator were often the same person, and running a single calculation could take hours of setup.
+          </p>
+
+          <p>
+          Batch processing emerged in the early 1950s as the first step toward automation. Instead of running one job at a time with manual intervention, operators would collect a batch of jobs on punched cards and feed them sequentially into the machine. IBM's early mainframes used this approach. A primitive monitor program would load the next job automatically when the previous one finished — this was the embryonic form of what would become an operating system.
+          </p>
+        </article>
+
+        <article>
+          <h3>Second Generation: Transistors and Batch Systems.</h3>
+
+          <p>
+          The second generation of computers replaced vacuum tubes with transistors, making machines smaller, more reliable, and cheaper. IBM's 7090 series became standard in scientific computing. This era produced the first true operating systems — software that managed the computer's resources and scheduled jobs without human intervention between each task.
+          </p>
+
+          <p>
+          The FMS (FORTRAN Monitor System) and IBSYS were among the first real operating systems, developed for IBM mainframes in the late 1950s. They handled job sequencing, basic I/O operations, and error handling. Crucially, they introduced the concept of the resident monitor — a small program that stayed in memory permanently and managed the transition between jobs. This is the direct ancestor of the kernel concept in modern operating systems.
+          </p>
+
+          <p>
+          Time-sharing was theorized during this period. John McCarthy at MIT proposed in 1959 that computers could serve multiple users simultaneously by rapidly switching between their tasks. This radical idea — that expensive computing time could be shared — would define the next generation.
+          </p>
+        </article>
+
+        <article>
+          <h3>Third Generation: Multiprogramming and Time-Sharing</h3>
+
+          <p>
+          The third generation brought integrated circuits and with them the IBM System/360 — a family of compatible computers ranging from small to large, all running the same operating system. IBM's OS/360 was one of the most ambitious software projects ever attempted and one of the most troubled. It was late, over budget, and full of bugs — but it established the principle that one OS could run on hardware of vastly different sizes, a concept taken for granted today.
+          </p>
+
+          <p>
+          MULTICS (Multiplexed Information and Computing Service), developed jointly by MIT, Bell Labs, and General Electric starting in 1965, attempted to create a truly comprehensive time-sharing system. It was overengineered and never commercially successful, but its ideas were enormously influential. Two Bell Labs researchers who worked on MULTICS — Ken Thompson and Dennis Ritchie — left frustrated and created something simpler: UNIX.
+          </p>
+
+          <p>
+          UNIX, developed at Bell Labs between 1969 and 1973, became one of the most important operating systems in history. It was small, elegant, and written in the C programming language that Ritchie developed alongside it. UNIX introduced the hierarchical file system, the concept of everything-as-a-file, pipes for connecting programs, and the shell as a user interface. Nearly every modern operating system — Linux, macOS, Android, iOS — descends from or was heavily influenced by UNIX.
+          </p>
+        </article>
+			</section>
+
+
+      <section id="gen-os-4">
+        <h2>The Fourth Generation: Personal Computers and Early Windows</h2>
+
+        <article>
+          <h3> The PC Revolution and CP/M</h3>
+
+          <p>
+          The fourth generation brought microprocessors and the personal computer. The Intel 8080 and Zilog Z80 chips of the mid-1970s made it possible to build a computer that fit on a desk and cost less than a car. Gary Kildall's CP/M (Control Program for Microcomputers), released in 1974, became the dominant operating system for early personal computers. It introduced the concept of a BIOS — a layer of software that abstracted the hardware from the operating system, allowing CP/M to run on machines from different manufacturers.
+          </p>
+
+          <p>
+          The IBM PC arrived in 1981 with a different operating system: PC-DOS, developed by Microsoft. The story of how Microsoft obtained this contract is legendary — IBM approached Digital Research (CP/M's maker) first, but negotiations failed, and Microsoft stepped in with QDOS (Quick and Dirty Operating System), which they had purchased from Seattle Computer Products for $50,000 and adapted into PC-DOS. This single business decision made Microsoft the dominant force in personal computing for decades.
+          </p>
+
+          <p>
+          MS-DOS (the version Microsoft sold to other manufacturers) spread rapidly as IBM PC clones flooded the market. It was a command-line system — users typed commands to run programs, copy files, and navigate directories. There was no graphical interface, no mouse support, and no multitasking. Despite these limitations, MS-DOS defined personal computing through the 1980s and into the early 1990s.
+          </p>
+        </article>
+
+        <article>
+          <h3>The Graphical Revolution: From Xerox to Windows</h3>
+
+          <p>
+          The graphical user interface was not invented by Apple or Microsoft. It was developed at Xerox PARC (Palo Alto Research Center) in the early 1970s. The Xerox Alto (1973) had a mouse, windows, icons, and menus — everything we associate with modern computing. Xerox never commercialized it effectively, but Steve Jobs famously visited PARC in 1979 and recognized what he saw.
+          </p>
+
+          <p>
+          Apple's Lisa (1983) was the first commercial personal computer with a GUI, followed by the far more successful Macintosh (1984). The original Mac ran System 1, an operating system built entirely around the graphical interface. It was slow and had limited memory, but it showed that personal computers could be genuinely easy to use.
+          </p>
+
+          <p>
+          Microsoft released Windows 1.0 in 1985 — a graphical shell running on top of MS-DOS rather than a true operating system. It was not well received. Windows 2.0 (1987) improved things marginally. The real breakthrough came with Windows 3.0 in 1990 and Windows 3.1 in 1992, which achieved widespread adoption in businesses and homes. These were still DOS-based shells, but they were stable enough and familiar enough to drive PC sales dramatically.
+          </p>
+        </article>
+
+        <article>
+          <h3>Windows 95 and the Modern Era Begins</h3>
+
+          <p>
+          Windows 95, released on August 24, 1995, was a cultural event. Microsoft ran a $300 million marketing campaign using the Rolling Stones' "Start Me Up." People queued outside stores at midnight. Windows 95 introduced the Start menu, the taskbar, and long file names — elements that defined Windows for two decades. More importantly, it integrated DOS and Windows into a single product and added built-in TCP/IP networking, positioning PCs for the internet age.
+          </p>
+
+          <p>
+          Windows 98 (1998) and Windows 98 SE (1999) refined the formula with better hardware support and internet integration via Internet Explorer. Windows ME (Millennium Edition, 2000) was widely regarded as unstable and is remembered as one of Microsoft's worst releases.
+          </p>
+
+          <p>
+          Parallel to the consumer line, Microsoft developed the NT (New Technology) kernel — a completely rewritten, more stable and secure architecture. Windows NT 3.1 launched in 1993, followed by NT 4.0 in 1996. Windows 2000 brought the NT kernel to business desktops. Windows XP (2001) unified the consumer and business lines under the NT kernel, combining the friendliness of Windows 98 with the stability of NT. XP became the most successful Windows version of its era, running on hundreds of millions of computers for over a decade.
+          </p>
+        </article>
+      </section>
+
+
+      <section id="first-os-bios">
+        <h2>Early BIOS: How Computers Booted</h2>
+
+        <article>
+          <h3>What BIOS Was and How It Started</h3>
+
+          <p>
+          BIOS stands for Basic Input/Output System. The concept was introduced by Gary Kildall in CP/M — a small program stored in ROM (read-only memory) that initialized hardware and provided basic services to the operating system. When IBM designed the PC in 1981, they adopted this architecture: a BIOS chip on the motherboard would run first, check hardware, and then load the operating system from disk.
+          </p>
+
+          <p>
+          The IBM PC BIOS was deliberately published openly, which allowed clone manufacturers to reverse-engineer it. Compaq famously did this legally in 1982 by clean-room reverse engineering — having one team document what the BIOS did without looking at the code, and another team write a new BIOS from scratch. This created the compatible PC market and eventually ended IBM's control over the platform they created.
+          </p>
+
+          <p>
+          The BIOS interface was entirely text-based and accessed by pressing a key during startup (typically Del, F2, or F10 depending on the manufacturer). It allowed users to set the system clock, configure boot order, and enable or disable hardware. The interface changed remarkably little from the early 1980s through the 2000s — a testament to backward compatibility requirements.
+          </p>
+        </article>
+
+        <article>
+          <h3>BIOS Through the 1990s and 2000s</h3>
+
+          <p>
+          Through the 1990s, BIOS became increasingly important as hardware complexity grew. Plug and Play (PnP) support was added in the mid-1990s, allowing the BIOS to automatically configure expansion cards rather than requiring manual IRQ and DMA settings. This was a significant quality-of-life improvement — before PnP, installing a sound card could require hours of manual configuration.
+          </p>
+
+          <p>
+          The BIOS also managed the growing complexity of storage. The original IBM BIOS could only address hard drives up to 504 MB due to limitations in how it communicated with drives. As hard drives grew larger, BIOS manufacturers introduced various extensions and workarounds — LBA (Logical Block Addressing) allowed drives up to 8.4 GB, then 137 GB, before further extensions pushed the limit higher.
+          </p>
+
+          <p>
+          Award BIOS, AMI BIOS, and Phoenix BIOS became the three dominant BIOS manufacturers through the 1990s and 2000s. Their products were licensed by motherboard manufacturers worldwide. Despite competition between them, their interfaces looked remarkably similar — blue screens with yellow text, navigated entirely by keyboard. By the late 2000s, the BIOS had reached the limits of what it could reasonably do. The 16-bit architecture of the original IBM BIOS was running software written for 1981 hardware on systems vastly more capable. The replacement — UEFI — was already being developed.
+          </p>
+        </article>
+      </section>
+
+
+      <section id="tables-gen-os">
+        <h2>Historical Overview: Tables</h2>
+
+        <div class="all-tables-history-os">
+          <div class="gen-os-1-3-table">
+            <h3>OS Generations 1–3</h3>
+
+            <table class="pages-table table-history-os-gen-1-3">
+              <thead>
+              <tr>
+                <th>Generation</th>
+                <th>Era</th>
+                <th>Key Technology</th>
+                <th>Example Systems</th>
+                <th>Key OS Concept</th>
+              </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1st</td>
+                  <td>1940s–early 1950s</td>
+                  <td rowspan="2">Vacuum tubes</td>
+                  <td>ENIAC, Mark 1</td>
+                  <td>No OS — manual operation</td>
+                </tr>
+
+                <tr>
+                  <td>1st(late)</td>
+                  <td>Early 1950s</td>
+                  <td>IBM 701</td>
+                  <td>Batch monitor programs</td>
+                </tr>
+
+                <tr>
+                  <td>2nd</td>
+                  <td>1955–1965</td>
+                  <td>Transistors</td>
+                  <td>IBM 7090, 7094</td>
+                  <td>FMS, IBSYS — resident monitors</td>
+                </tr>
+
+                <tr>
+                  <td>3rd(early)</td>
+                  <td>1965–1970</td>
+                  <td>Integrated circuits</td>
+                  <td>IBM System/360</td>
+                  <td>OS/360 — compatible OS families</td>
+                </tr>
+
+                <tr>
+                  <td>3rd (late)</td>
+                  <td>1969–1980</td>
+                  <td>IC + minicomputers</td>
+                  <td>PDP-7, PDP-11</td>
+                  <td>UNIX — hierarchical FS, C language</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="gen-os-4-table">
+            <h3>OS Generation 4 — Personal Computers</h3>
+
+            <table class="pages-table table-history-os-gen-4">
+              <thead>
+              <tr>
+                <th>Year</th>
+                <th>System</th>
+                <th>OS</th>
+                <th>Key Feature</th>
+              </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1974</td>
+                  <td>MITS Altair</td>
+                  <td>None (switches)</td>
+                  <td>First microcomputer kit</td>
+                </tr>
+
+                <tr>
+                  <td>1977</td>
+                  <td>Apple II</td>
+                  <td>Apple DOS</td>
+                  <td>First successful home computer</td>
+                </tr>
+
+                <tr>
+                  <td>1980</td>
+                  <td>IBM PC prototype</td>
+                  <td>CP/M (planned)</td>
+                  <td>—</td>
+                </tr>
+
+                <tr>
+                  <td>1981</td>
+                  <td>IBM PC</td>
+                  <td>PC-DOS 1.0</td>
+                  <td>Command line, 16-bit</td>
+                </tr>
+
+                <tr>
+                  <td>1984</td>
+                  <td>Apple Macintosh</td>
+                  <td>System 1</td>
+                  <td>First mainstream GUI</td>
+                </tr>
+
+                <tr>
+                  <td>1985</td>
+                  <td>IBM PC clones</td>
+                  <td>MS-DOS 3.x</td>
+                  <td>Dominant PC platform</td>
+                </tr>
+
+                <tr>
+                  <td>1990</td>
+                  <td rowspan="3">Various</td>
+                  <td>Windows 3.0</td>
+                  <td>First widely adopted Windows</td>
+                </tr>
+
+                <tr>
+                  <td>1995</td>
+                  <td>Windows 95</td>
+                  <td>Start menu, 32-bit, TCP/IP</td>
+                </tr>
+
+                <tr>
+                  <td>2001</td>
+                  <td>Windows XP</td>
+                  <td>NT kernel for consumers</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="old-windows-os-table">
+            <h3>Early Windows Versions</h3>
+
+            <table class="pages-table tables-history-windows-os">
+              <thead>
+                <tr>
+                  <th>Version</th>
+                  <th>Year</th>
+                  <th>Kernel</th>
+                  <th>Key Feature</th>
+                  <th>Reception</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Windows 1.0</td>
+                  <td>1985</td>
+                  <td rowspan="4">DOS shell</td>
+                  <td>First Microsoft GUI</td>
+                  <td>Poor</td>
+                </tr>
+
+                <tr>
+                  <td>Windows 2.0</td>
+                  <td>1987</td>
+                  <td>Overlapping windows</td>
+                  <td>Modest</td>
+                </tr>
+
+                <tr>
+                  <td>Windows 3.0</td>
+                  <td>1990</td>
+                  <td>Program Manager, wider adoption</td>
+                  <td>Good</td>
+                </tr>
+
+                <tr>
+                  <td>Windows 3.1</td>
+                  <td>1992</td>
+                  <td>TrueType fonts, stability</td>
+                  <td>Very good</td>
+                </tr>
+
+                <tr>
+                  <td>Windows 95</td>
+                  <td>1995</td>
+                  <td rowspan="3">DOS/Win hybrid</td>
+                  <td>Start menu, taskbar, 32-bit</td>
+                  <td>Excellent</td>
+                </tr>
+
+                <tr>
+                  <td>Windows 98</td>
+                  <td>1998</td>
+                  <td>USB support, IE integration</td>
+                  <td>Good</td>
+                </tr>
+
+                <tr>
+                  <td>Windows ME</td>
+                  <td>2000</td>
+                  <td>System Restore</td>
+                  <td>Poor</td>
+                </tr>
+
+                <tr>
+                  <td>Windows 2000</td>
+                  <td>2000</td>
+                  <td>NT 5.0</td>
+                  <td>NT kernel for business</td>
+                  <td>Very good</td>
+                </tr>
+
+                <tr>
+                  <td>Windows XP</td>
+                  <td>2001</td>
+                  <td>NT 5.1</td>
+                  <td>Unified consumer/business</td>
+                  <td>Excellent</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bios-history-tables">
+            <h3>BIOS Evolution: 1981–2005</h3>
+
+            <table class="pages-table table-history-os-bios">
+              <thead>
+                <tr>
+                  <th>Era</th>
+                  <th>Key Developmet</th>
+                  <th>Manufacturer</th>
+                  <th>Significance</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1981</td>
+                  <td>IBM PC BIOS</td>
+                  <td>IBM</td>
+                  <td>Defined the standard</td>
+                </tr>
+
+                <tr>
+                  <td>1982</td>
+                  <td>Clean-room BIOS</td>
+                  <td>Compaq</td>
+                  <td>Created clone market</td>
+                </tr>
+
+                <tr>
+                  <td>Late 1980s</td>
+                  <td>Award/AMI/Phoenix BIOS</td>
+                  <td>Various</td>
+                  <td>Licensed BIOS market</td>
+                </tr>
+
+                <tr>
+                  <td>1994</td>
+                  <td>Plug and Play BIOS</td>
+                  <td>Intel/Microsoft</td>
+                  <td>Auto hardware configuration</td>
+                </tr>
+
+                <tr>
+                  <td>1996</td>
+                  <td>LBA support</td>
+                  <td rowspan="2">Various</td>
+                  <td>HDD beyond 504 MB</td>
+                </tr>
+
+                <tr>
+                  <td>2000</td>
+                  <td>BIOS beyond 8.4 GB</td>
+                  <td>Larger drive support</td>
+                </tr>
+
+                <tr>
+                  <td>2002</td>
+                  <td>UEFI development begins</td>
+                  <td>Intel</td>
+                  <td>EFI specification 1.0</td>
+                </tr>
+
+                <tr>
+                  <td>2005</td>
+                  <td>BIOS beyond 137 GB</td>
+                  <td>Various</td>
+                  <td>48-bit LBA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <article>
+          <h3>Four Generations: What Changed</h3>
+
+          <p>
+          The story of operating systems is the story of abstraction. Each generation added another layer between the programmer and the hardware, making computers easier to use for more people. First generation machines required physical rewiring. Second generation introduced software job management. Third generation brought time-sharing and UNIX — the foundation of modern computing. Fourth generation put a computer on every desk and eventually a GUI in front of every user.
+          </p>
+
+          <p>
+          The BIOS played a quiet but essential role throughout — the invisible layer that made hardware diversity possible. Its limitations would eventually force a complete redesign, but for 25 years it did its job reliably across hundreds of millions of machines.
+          </p>
+
+          <p>
+          What is remarkable is how much of this history is still present in modern systems. The UNIX philosophy shapes Linux and macOS today. The x86 architecture of the IBM PC still runs in every Windows machine. The C language Dennis Ritchie wrote to build UNIX is still among the most used programming languages in the world. Computing rarely discards its past — it builds on top of it.
+          </p>
+        </article>
+      </section>
+		</main>
+
+    <footer>
+			<p>Made by media-holera-bit-git · Computer Basics</p>
+			<a href="../../../contact.html">Contact</a>
+			<a href="os.html">← Back to the Previous topic</a>
+			<a href="../../../index.html">←← Back to Home</a>
+			<a href="os-bios.html">Next team →</a>
+		</footer>
+	</body>
+</html>
+
