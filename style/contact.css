@@ -202,3 +202,12 @@ a::before {
   content: "✅";
 }
 
+@media (max-width: 786px) {
+  header p {
+    font-size: 13px;
+  }
+
+  header a {
+    font-size: 15px;
+  }
+}

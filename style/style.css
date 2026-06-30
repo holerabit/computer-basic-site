@@ -268,3 +268,31 @@ body {
     margin: 0;
     padding: 0;
 }
+
+@media (max-width: 786px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 14.5px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  a {
+    font-size: 13.5px;
+  }
+
+  footer a {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
