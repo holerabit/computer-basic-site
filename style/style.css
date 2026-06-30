@@ -1,3 +1,13 @@
+:root {
+  --border-color: #999999;
+  --text-color: #cccccc;
+  --h1-color: #ffffff;
+  --back-color: #1a1a1a;
+  /*footer color*/
+  --footer-color: #4a4a4a;
+  --link-footer-color: #666666;
+}
+
 html {
 	/*Color for text and background*/
 	color: #eaeaea;
@@ -14,8 +24,8 @@ header{
 	padding: 1%;
 
 	/*Color for nav(main) and border*/
-	border-bottom: 4px solid #999999;
-	background-color: #1a1a1a;
+	border-bottom: 4px solid var(--border-color);
+	background-color: var(--back-color);
 
 	/*Display*/
 	display: flex;
@@ -34,7 +44,7 @@ header{
 }
 
 header:hover {
-  border-color: #cccccc;
+  border-color: var(--text-color);
 }
 
 .main-nav {
@@ -57,7 +67,7 @@ header:hover {
 }
 
 .main-nav a:focus {
-  color: #999999;
+  color: var(--border-color);
 }
 
 /*Main style*/
@@ -68,7 +78,7 @@ main {
   padding: 10px;
 
   /*Border*/
-  border-left: 5px solid #999999;
+  border-left: 5px solid var(--border-color);
   padding-left: 50px;
 }
 
@@ -93,7 +103,7 @@ a {
 }
 
 a:visited {
-  color: #4a4a4a;
+  color: var(--footer-color);
 }
 
 a:hover {
@@ -103,7 +113,7 @@ a:hover {
 /*Tab focuse*/
 a:focus {
   /*Color*/
-  color: #ffffff;
+  color: var(--h1-color);
 
   /*Border*/
   outline: none;
@@ -112,7 +122,7 @@ a:focus {
 /*Heading style*/
 h1 {
   /*Color*/
-  color: #ffffff;
+  color: var(--h1-color);
 
   /*Size*/
   font-size: 2.5rem;
@@ -124,19 +134,19 @@ h1 {
 
 h2 {
   /*Color*/
-  color: #cccccc;
+  color: var(--text-color);
 
   /*Size*/
   font-size: 1.2rem;
 
   /*Border*/
-  border-bottom: 4px solid #999999;
+  border-bottom: 4px solid var(--border-color);
   padding-bottom: 20px;
 }
 
 h3 {
   /*Color*/
-  color: #999999;
+  color: var(--border-color);
 
   /*Size*/
   font-size: 1.1rem;
@@ -191,7 +201,7 @@ header p {
 } 
 
 .p-base p {
-  color: #cccccc;
+  color: var(--text-color);
 }
 
 /*article*/
@@ -204,7 +214,7 @@ article {
   border: 4px solid #777777;
 
   /*Color*/
-  background-color: #1a1a1a;
+  background-color: var(--back-color);
 
   /*Smoothness*/
   transition: border-color 0.5s ease;
@@ -217,7 +227,7 @@ article:hover {
 /*footer*/
 footer {
   /*Line*/
-  border-top: 4px solid #999999;
+  border-top: 4px solid var(--border-color);
 
   /*Spacing and indentation*/
   padding: 10px;
@@ -230,23 +240,23 @@ footer {
   
   /*Text and Color text*/
   text-align: center;
-  color: #4a4a4a;
+  color: var(--footer-color);
 
   /*Smoothness*/
   transition: border-color 0.5s ease;
 }
 
 footer:hover {
-  border-color: #cccccc;
+  border-color: var(--text-color);
 }
 
 footer a {
     font-size: 1rem;
-    color: #666666;
+    color: var(--link-footer-color);
 }
 
 footer a:visited {
-    color: #666666;
+    color: var(--link-footer-color);
 }
 
 section {  
