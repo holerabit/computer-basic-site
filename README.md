@@ -24,3 +24,8 @@ Built with HTML and CSS. Currently in development.
 ### Version 0.10.6
 - Add Update list in GitHub.
 - Changes in contacts.
+### Version 1
+- New Style!
+- Add shadow
+- Add more interactive for main page
+- Add nev icon for contact page
