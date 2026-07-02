@@ -13,3 +13,14 @@ Built with HTML and CSS. Currently in development.
 
 ## Author
 [holerabit](https://github.com/holerabit)
+
+## Update
+### Version 0. 
+- First version.
+### Version 0.10
+- Add adaptability for Mobile.
+### Version 0.10.5
+- Adaptability for phones has been improved.
+### Version 0.10.6
+- Add Update list in GitHub.
+- Changes in contacts.
