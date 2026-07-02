@@ -1,4 +1,6 @@
+/* --- COLORS --- */
 :root {
+  /*main color*/
   --border-color: #999999;
   --text-color: #cccccc;
   --h1-color: #ffffff;
@@ -8,6 +10,7 @@
   --link-footer-color: #666666;
 }
 
+/* --- HTML AND BODY --- */
 html {
 	/*Color for text and background*/
 	color: #eaeaea;
@@ -17,11 +20,11 @@ html {
   font-family: 'Courier New', monospace;
 }
 
-/*Header and a in main-nav*/
+/* --- HEADER --- */
 header{
 	/*Size*/
 	width: 100%;
-	padding: 1%;
+	padding: 40px;
 
 	/*Color for nav(main) and border*/
 	border-bottom: 4px solid var(--border-color);
@@ -43,10 +46,15 @@ header{
   transition: border-color 0.5s ease;
 }
 
+header h1 {
+  text-shadow: 8px 8px 7.5px black;
+}
+
 header:hover {
   border-color: var(--text-color);
 }
 
+/* --- NAV --- */
 .main-nav {
     display: flex;
     flex-direction: column;
@@ -78,7 +86,7 @@ main {
   padding: 10px;
 
   /*Border*/
-  border-left: 5px solid var(--border-color);
+  border-left: 8px groove var(--border-color);
   padding-left: 50px;
 }
 
@@ -135,13 +143,27 @@ h1 {
 h2 {
   /*Color*/
   color: var(--text-color);
+  background-color: var(--back-color);
 
   /*Size*/
   font-size: 1.2rem;
 
   /*Border*/
-  border-bottom: 4px solid var(--border-color);
+  border-bottom: 6px solid var(--border-color);
+  border-radius: 12px;
+
+  filter: drop-shadow(8px 8px 10px var(--text-color));
+
+  transition: 
+  filter 1s ease,
+  transform 1s ease;
+
   padding-bottom: 20px;
+}
+
+h2:hover {
+  filter: drop-shadow(10px 10px 12px var(--text-color));
+  transform: scale(1.02);
 }
 
 h3 {
@@ -198,6 +220,12 @@ header p {
 
 .p-base {
   max-width: none;
+  background-color: var(--footer-color);
+  border-radius: 12px;
+
+  text-align: center;
+
+  margin-bottom: 50px;
 } 
 
 .p-base p {
@@ -207,7 +235,7 @@ header p {
 /*article*/
 article {
   /*Spacing and indentation*/
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   padding: 12px;
 
   /*Border*/
@@ -217,11 +245,30 @@ article {
   background-color: var(--back-color);
 
   /*Smoothness*/
-  transition: border-color 0.5s ease;
+  transition: 
+  border-color 0.5s ease,
+  box-shadow 1s ease,
+  transform 1s ease;
+
+  box-shadow: 20px 20px 10px black;
+}
+
+article a {
+  transition: 
+  transform 0.5s ease,
+  background-color 5s ease-in;
+  border-radius: 12px;
+}
+
+article a:hover {
+  transform: scale(1.025);
+  background-color: hsl(0 100% 65% / 0.2);
 }
 
 article:hover {
   border-color: #aaaaaa;
+  box-shadow: 26px 26px 14px black;
+  transform: scale(1.05);
 }
 
 /*footer*/
@@ -248,6 +295,10 @@ footer {
 
 footer:hover {
   border-color: var(--text-color);
+}
+
+footer .p-base {
+  background-color: #1a1a1a;
 }
 
 footer a {

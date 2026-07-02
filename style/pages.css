@@ -53,6 +53,8 @@ header{
   margin-top: 55px;
   margin-bottom: 40px;
   width: 100%;
+
+  box-shadow: 8px 12px 12px black;
 }
 
 /*Style for td and th in all pages*/
@@ -99,6 +101,8 @@ h1 {
   color: #4ec9b0;
 
   font-size: 2rem;
+
+  text-shadow: 10px 10px 5px black;
 }
 
 h2 {
@@ -199,9 +203,12 @@ article {
 
   /*Border*/
   border-left: 2px solid #4ec9b0;
+  border-radius: 14px;
 
   /*Color*/
   background-color: #1a1a2e;
+
+  box-shadow: 5px 5px 4px black;
 }
 
 section {
@@ -276,6 +283,18 @@ img {
 
   /*Smoothness*/
   transition: opacity 1s ease;
+}
+
+.image-block {
+  display: flex;
+
+  .img-first-cpu {
+    justify-content: flex-start;
+  }
+
+  .img-second-cpu {
+    justify-content: flex-end;
+  }
 }
 
 img:hover {
