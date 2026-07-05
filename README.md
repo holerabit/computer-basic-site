@@ -25,7 +25,9 @@ Built with HTML and CSS. Currently in development.
 - Add Update list in GitHub.
 - Changes in contacts.
 ### Version 1
-- New Style!
+- New Style!:
 - Add shadow
 - Add more interactive for main page
 - Add nev icon for contact page
+### Version 1.01
+- Normalization of contacts
