@@ -31,3 +31,4 @@ Built with HTML and CSS. Currently in development.
 - Add nev icon for contact page
 ### Version 1.01
 - Normalization of contacts
+
