@@ -199,10 +199,6 @@ a:focus {
 
 /*Before Link a*/
 a::before {
-  content: "❌";
-}
-
-footer a::before {
   content: "✅";
 }
 
