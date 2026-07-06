@@ -38,6 +38,8 @@ header{
 
 .pages-contacts-nav a:hover {
 	color: #ffd060;
+
+  font-size: 1.2rem;
 }
 
 /*More tables*/
@@ -113,6 +115,8 @@ h2 {
   font-size: 1.1rem;
   margin-bottom: 20px;
   margin-top: 75px;
+
+  text-align: center;
 }
 
 h3 {
@@ -165,10 +169,14 @@ footer {
 /*footer link*/
 footer a{
   color: #9b72cf;
+
+  font-size: 0.85rem;
 }
 
 footer a:hover {
   color: #6b4a9f;
+
+  font-size: 0.975rem;
 }
 
 /*Link*/
@@ -176,8 +184,12 @@ footer a:hover {
 a {
   text-decoration: none;
 
+  padding-right: 20px;
+
   color: #5bc8f5;
-  transition: color 1s ease;
+  transition: 
+  color 0.5s ease,
+  font-size 1s ease;
 }
 
 a:visited {
@@ -186,6 +198,8 @@ a:visited {
 
 a:hover {
   color: #3a9ac4;
+
+  font-size: 1.05rem;
 }
 
 a:focus {
@@ -198,7 +212,7 @@ a:focus {
 /*Article*/
 article {
   /*Size*/
-  margin-bottom: 25px;
+  margin-bottom: 70px;
   padding: 15px;
 
   /*Border*/
@@ -209,6 +223,11 @@ article {
   background-color: #1a1a2e;
 
   box-shadow: 5px 5px 4px black;
+  transition: transform 1.2s ease;
+}
+
+article:hover {
+  transform: scale(1.0035);
 }
 
 section {
@@ -227,26 +246,37 @@ p {
 ul, ol {
   background-color: #0d0d1a;
   border-left: 4px inset #7ec87e;
+  border-radius: 14px;
 
   padding-top: 10px;
   padding-bottom: 10px;
   padding: 25px;
+
+  box-shadow: 5px 5px 4px black;
+
+  transition: transform 1s ease;
+}
+
+:is(ul, ol):hover {
+  transform: scale(1.0035);
 }
 
 ol {
   list-style-type: "/!   ";
 
-  padding-left: 45px;
+  padding-left: 55px;
 }
 
 ul {
   list-style-type: "-/   ";
 
-  padding-left: 45px;
+  padding-left: 55px;
+
+  margin: 0 auto;
 }
 
 li {
-  margin-bottom: 34px;
+  margin-block: 32px;
   line-height: 30px;
 }
 

@@ -28,21 +28,30 @@ header {
   /*Display*/
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /*Style Text*/
   justify-content: center;
   text-align: center;
   /*Border*/
-  border-bottom: 6px groove #c0392b;
+  border: 6px groove #c0392b;
+  border-radius: 12px;
   /*Smoothness*/
   transition: 
-  border-bottom 2s ease, 
-  opacity 1.2s ease;
+  border 2s ease, 
+  opacity 1.2s ease,
+  box-shadow 2s ease;
+
+  margin: 15vw;
+
+  box-shadow: 12px 12px 8px black;
 }
 
 /*Hover Header*/
 header:hover {
-  border-bottom: 8px groove #1a0a0a;
+  border: 8px groove #1a0a0a;
   opacity: 0.8;
+  box-shadow: 8px 8px 6px black;
 }
 
 /*Main Text Header*/
@@ -74,26 +83,32 @@ main {
   /*Size*/
   min-height: 260px;
   /*Border*/
-  border-bottom: 10px ridge #1a2a4a;
-  border-top: 6px solid #003366;
+  border: 10px ridge #1a2a4a;
+  border-radius: 12px;
   /*Soomthness*/
   transition: 
-  border-bottom 2s ease, 
-  border-top 2s ease, 
-  opacity 1.2s ease;
+  border 2s ease,  
+  opacity 1.2s ease,
+  box-shadow 2s ease;
+
+  margin: 18vw;
+
+  box-shadow: 6px 6px 4px black;
 }
 
 /*Hover Main*/
 main:hover {
-  border-top: 8px solid #0a0a1a;
-  border-bottom: 12px ridge #0a0a1a;
+  border: 8px ridge #0a0a1a;
   opacity: 0.8;
+  box-shadow: 4px 4px 2px black;
 }
 
 /*Link Main*/
 main a { /*Main link "Main"*/
   color: #c8f5c8;
   display: grid;
+  gap: 7px;
+  margin-bottom: 20px;
 }
 
 main a:visited { /*Visit Link Main*/
@@ -107,33 +122,36 @@ main a:visited { /*Visit Link Main*/
 footer {
   /*Back color*/
   background-color: #1a1500;
-  /*Display*/
-  display: grid;
   /*Element style*/
   justify-content: center;
   /*Size*/
   height: 200px;
   /*Border*/
-  border-top: 6px solid #b8860b;
-  border-bottom: 8px groove #8b7536;
+  border: 6px solid #b8860b;
+  border-radius: 12px;
   /*Soomthness*/
   transition: 
-  border-bottom 2s ease, 
-  border-top 2s ease, 
-  opacity 1.2s ease;
+  border 2s ease,  
+  opacity 1.2s ease,
+  box-shadow 2s ease;
+
+  margin: 18vw;
+
+  box-shadow: 7px 7px 6px black;
 }
 
 /*Hover Footer*/
 footer:hover {
-  border-top: 8px solid #ccaa00;
-  border-bottom: 10px groove #ccaa00;
+  border: 8px solid #ccaa00;
   opacity: 0.8;
+  box-shadow: 5px 5px 4px black;
 }
 
 /*Main Text Footer*/
 footer p {
   color: #ffb300;
   text-align: center;
+  margin-bottom: 3vw;
 }
 
 /*Style Mase Text*/
