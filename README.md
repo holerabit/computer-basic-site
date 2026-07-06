@@ -31,4 +31,8 @@ Built with HTML and CSS. Currently in development.
 - Add nev icon for contact page
 ### Version 1.01
 - Normalization of contacts
-
+### Version 1.51
+- Again New style!
+- Add more shadows
+- Add card in Contact
+- Bug Fixed
