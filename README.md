@@ -53,10 +53,10 @@ This is my first bigger project! Please don't judge strictly.
 
 ### Version 2.0 
 [Date: 22 Jul 2026]
-- Udpadets Adapation for Phone
+- Updates Adapation for Phone
 - Change Style
 - Add New Style
-- New README.md(Project Description)
+- New README(Project Description)
 - Bug Fixed
 - Add Date Update
-- Add number Umdate in Header (First HTML file)
+- Add number Update in Header (First HTML file)
