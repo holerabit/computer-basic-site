@@ -1,5 +1,5 @@
-# Site Computer Basics
-          This site covers the fundamentals of components and the companies that manufacture various types of equipment. The site features information exclusively about personal computers.
+# Site Computer Basic
+This site covers the fundamentals of components and the companies that manufacture various types of equipment. The site features information exclusively about personal computers.
 
 ___
 
