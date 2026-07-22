@@ -1,207 +1,264 @@
+/* ==== 
+ * HTML and Body
+ * ==== */
+
 html {
-	/*Color for text and background*/
+	/* ~ Color ~ */
 	color: #eaeaea;
 	background-color: #111111;
 
-  /*Font*/
+  /* ~ Font ~ */
   font-family: 'Courier New', monospace;
 }
-
-
-
-/*Header and a in pages-contacts-nav*/
-header{
-	/*Size*/
-	width: 100%;
-	padding: 1%;
-
-	/*Border and Background-color*/
-	border-bottom: 4px solid #4ec9b0;
-	background-color: #1e1e2e;
-
-  /*Display*/
-  display: flex;
-
-	/*Text*/
-	text-align: center;
-
-	/*Position*/
-	position: sticky;
-  top: 0;
-  z-index: 100;
-  flex-direction: column;
-}
-
-.pages-contacts-nav a {
-	color: #ffb000;
-}
-
-.pages-contacts-nav a:hover {
-	color: #ffd060;
-
-  font-size: 1.2rem;
-}
-
-/*More tables*/
-
-/*All pages table*/
-.pages-table {
-  /*Border*/
-	border-collapse: collapse;
-  border: 4px solid #4ec9b0;
-
-  /*Size*/
-  width: auto;
-  margin-top: 55px;
-  margin-bottom: 40px;
-  width: 100%;
-
-  box-shadow: 8px 12px 12px black;
-}
-
-/*Style for td and th in all pages*/
-.pages-table th, .pages-table td {
-	border: 2px solid #4ec9b0;
-	padding: 10px;
-}
-
-/*td style for all pages table*/
-.pages-table td {
-	background-color: #1a1a2e;
-	text-align: center;
-}
-
-/*th style for all pages table*/
-.pages-table th {
-	background-color: #2a2a4a;
-	text-align: center;
-}
-
-
 
 body { 
   margin: 0; 
   padding: 0; 
 }
 
-/*Main*/
+/* ====
+ * Header 
+ * ==== */
+
+header{
+	/* ~ Size ~ */
+	width: 100%;
+	padding: 1%;
+
+	/* ~ Border ~ */
+	border-bottom: 4px solid #4ec9b0;
+
+  /* ~ Color ~ */
+	background-color: #1e1e2e;
+
+  /* ~ Display ~ */
+  display: flex;
+
+	/* ~ Aligment ~ */
+	text-align: center;
+  flex-direction: column;
+
+	/* ~ Position ~ */
+	position: sticky;
+  top: 0;
+  z-index: 100; 
+}
+
+/* !!! */
+.pages-contacts-nav a {
+	color: #ffb000;
+}
+
+.pages-contacts-nav a:hover {
+	color: #ffd060;
+  font-size: 1.2rem;
+}
+
+/* ====
+ * Main
+ * ==== */
 
 main {
-  /*Size*/  
+  /* ~ Size ~ */  
   max-width: 500vw;
   margin: 0 auto;
   padding: 10px;
-
-  /*Border*/
-  border-left: 5px solid #4ec9b0;
-  border-right: 5px solid #4ec9b0;
   padding-left: 50px;
+
+  /* ~ Border ~ */
+  border-left: 5px solid #4ec9b0;
+  border-right: 5px solid #4ec9b0; 
 }
 
-/*Heading*/
-h1 {
-  color: #4ec9b0;
-
-  font-size: 2rem;
-
-  text-shadow: 10px 10px 5px black;
-}
-
-h2 {
-  /*Color*/
-  color: #5bc8f5;
-
-  /*Size*/
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  margin-top: 75px;
-
-  text-align: center;
-}
-
-h3 {
-  color: #7ec87e;
-
-  font-size: 0.9rem;
-}
-
-h1, h2, h3 {
-  letter-spacing: 5px;
-}
-
-h2, h3 {
-  font-weight: normal;
-}
-
-h1::before{
-  content: "_-| ";
-}
-
-h1::after {
-  content: " |-_";
-}
-
-h2::before {
-  content: "!- ";
-}
-
-h3::before {
-  content: "!> ";
-}
-
-/*footer*/
+/* ====
+ * Footer
+ * ==== */
 
 footer {
-  /*Color*/
+  /* ~ Color ~ */
   background-color: #1e1e2e;
 
-  /*Border*/
+  /* ~ Border ~ */
   border-top: 4px solid #4ec9b0;
 
-  /*Size*/
-  padding: 30px;
+  /* ~ Size ~ */ 
   font-size: 11px;
 
-  /*Text*/
+  /* ~ Aligment ~ */
   text-align: center;
+  padding: 30px;
 }
 
-/*footer link*/
+/* --- Footer link --- */
 footer a{
+  /* ~ Color ~ */
   color: #9b72cf;
 
+  /* ~ Size ~ */
   font-size: 0.85rem;
 }
 
+/* -- Footer Link Hover -- */
 footer a:hover {
   color: #6b4a9f;
 
   font-size: 0.975rem;
 }
 
-/*Link*/
+/* ====
+ * Section 
+ * ==== */
+
+section {
+  margin-bottom: 100px;
+}
+
+/* ====
+ * Article
+ * ==== */
+article {
+  /* ~ Size ~ */
+  margin-bottom: 70px;
+
+  /* ~ Aligment ~ */
+  padding: 15px;
+
+  /* ~ Border ~ */
+  border-left: 2px solid #4ec9b0;
+  border-radius: 14px;
+
+  /* ~ Color ~ */
+  background-color: #1a1a2e;
+
+  /* ~ Shadows ~ */
+  box-shadow: 5px 5px 4px black;
+  /* ~ Animation ~ */
+  transition: 
+  transform 1.2s ease;
+}
+
+/* --- Article Hover --- */
+article:hover {
+  transform: scale(1.0035);
+}
+
+/* ====
+ * Heading
+ * ==== */
+
+h1, h2, h3 {
+  /* ~ Style ~ */
+  letter-spacing: 5px;
+}
+
+/* --- h2+h3 Style --- */
+h2, h3 {
+  /* ~ Style ~ */
+  font-weight: normal;
+}
+
+/* -- h1 Style -- */
+h1 {
+  /* ~ Color ~ */
+  color: #4ec9b0;
+
+  /* ~ Size ~ */
+  font-size: 2rem;
+
+  /* ~ Shadow ~ */
+  text-shadow: 10px 10px 5px black;
+}
+
+/* - h1 Before - */
+h1::before{
+  content: "_-| ";
+}
+
+/* - h1 After - */
+h1::after {
+  content: " |-_";
+}
+
+/* -- h2 Style -- */
+h2 {
+  /* ~ Color ~ */
+  color: #5bc8f5;
+
+  /* ~ Size ~ */
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  margin-top: 75px;
+
+  /* ~ Aligment ~ */
+  text-align: center;
+}
+
+/* - h2 Before - */
+h2::before {
+  content: "!- ";
+}
+
+/* -- h3 Style -- */
+h3 {
+  /* ~ Color ~ */
+  color: #7ec87e;
+
+  /* ~ Size ~ */
+  font-size: 0.9rem;
+}
+
+/* - h3 Before - */
+h3::before {
+  content: "!> ";
+}
+
+/* ====
+ * Text
+ * ==== */
+
+p {
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.p-top {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ====
+ * Link
+ * ==== */
 
 a {
+  /* ~ Decoration ~ */
   text-decoration: none;
 
+  /* ~ Aligment ~ */
   padding-right: 20px;
 
+  /* ~ Color ~ */
   color: #5bc8f5;
+
+  /* ~ Animation ~ */
   transition: 
   color 0.5s ease,
   font-size 1s ease;
 }
 
+/* --- Visited Link ---*/
 a:visited {
   color: #666666;
 }
 
+/* --- Hover Link --- */
 a:hover {
   color: #3a9ac4;
 
   font-size: 1.05rem;
 }
 
+/* --- Focus Link --- */
 a:focus {
   color: #a0c4ff;
 
@@ -209,39 +266,69 @@ a:focus {
   outline-offset: 3px;
 }
 
-/*Article*/
-article {
-  /*Size*/
-  margin-bottom: 70px;
-  padding: 15px;
+/* ====
+ * Image
+ * ==== */
+img {
+  /* ~ Size ~ */
+  max-width: 100%;
+  height: auto;
 
-  /*Border*/
-  border-left: 2px solid #4ec9b0;
-  border-radius: 14px;
+  /* ~ Border ~ */
+  border-radius: 10px;
 
-  /*Color*/
-  background-color: #1a1a2e;
+  /* ~ Opacity ~ */
+  opacity: 0.85;
 
-  box-shadow: 5px 5px 4px black;
-  transition: transform 1.2s ease;
+  /* ~ Animation ~ */
+  transition: 
+  opacity 1s ease;
 }
 
-article:hover {
-  transform: scale(1.0035);
+/* --- Hover Image --- */
+img:hover {
+  opacity: 1;
 }
 
-section {
-  margin-bottom: 100px;
+/* --- Figurecaption --- */
+figcaption {
+  /* ~ Color ~ */
+  color: #888888;
+  
+  /* ~ Text ~ */
+  font-size: 12px; 
+
+  /* ~ Size ~ */
+  margin-top: 20px;
 }
 
-/*Text p*/
+/* -- Figure -- */
+figure {
+  /* ~ Aligment ~ */
+  margin: 0 auto;
 
-p {
-  margin-bottom: 30px;
-  line-height: 30px;
+  /* ~ Display ~ */
+  display: inline-block;
 }
 
-/*List*/
+/* --- Aligment Image --- */
+.image-block {
+  /* ~ Display ~ */
+  display: flex;
+}
+
+/* -- First Image -- */
+.img-first-cpu {
+  justify-content: flex-start;
+}
+/* -- Second Image -- */
+.img-second-cpu {
+  justify-content: flex-end;
+}
+
+/* ====
+ * List
+ * ==== */
 
 ul, ol {
   background-color: #0d0d1a;
@@ -257,16 +344,19 @@ ul, ol {
   transition: transform 1s ease;
 }
 
+/* --- List Hobver --- */
 :is(ul, ol):hover {
   transform: scale(1.0035);
 }
 
+/* -- ol List -- */
 ol {
   list-style-type: "/!   ";
 
   padding-left: 55px;
 }
 
+/* -- ul List -- */
 ul {
   list-style-type: "-/   ";
 
@@ -275,80 +365,84 @@ ul {
   margin: 0 auto;
 }
 
+/* Text in List */ 
 li {
   margin-block: 32px;
   line-height: 30px;
 }
 
-/*The list is described*/
+/* === Double list === */
 dl {
+  /* ~ Color ~ */
   background-color: #141428;
+  /* ~ Border ~ */
   border-left: 4px ridge #5bc8f5;
+
+  /* ~ Aligment ~ */
   padding: 25px;
 }
 
+/* --- Header List --- */
 dt {
+  /* ~ Color ~ */
   color: #4ec9b0;
+
+  /* ~ Aligment ~ */
   margin-left: 20px;
+
+  /* ~ Style ~ */
   font-weight: bold;
   font-size: 1rem;
 }
 
+/* --- Main List --- */
 dd {
   color: #aaaaaa;
   margin-left: 70px;
 }
 
-/*Image*/
-img {
-  /*Size*/
-  max-width: 100%;
-  height: auto;
+/* ==== 
+ * Table 
+ * ==== */
+.pages-table {
+  /* ~ Border ~*/
+	border-collapse: collapse;
+  border: 4px solid #4ec9b0;
 
-  /*Border*/
-  border-radius: 10px;
+  /* ~ Size ~ */
+  width: auto;
+  margin-top: 55px;
+  margin-bottom: 40px;
+  width: 100%;
 
-  /*Opacity*/
-  opacity: 0.85;
-
-  /*Smoothness*/
-  transition: opacity 1s ease;
+  /* ~ Shadow ~ */
+  box-shadow: 8px 12px 12px black;
 }
 
-.image-block {
-  display: flex;
+/* --- Header cell + Main cell Table --- */
+.pages-table th, .pages-table td {
+	border: 2px solid #4ec9b0;
+	padding: 10px;
 }
 
-.img-first-cpu {
-  justify-content: flex-start;
+/* -- Main Cell Table */
+.pages-table td {
+	background-color: #1a1a2e;
+	text-align: center;
 }
 
-.img-second-cpu {
-  justify-content: flex-end;
+/* -- Header Cell Table -- */
+.pages-table th {
+	background-color: #2a2a4a;
+	text-align: center;
 }
 
-img:hover {
-  opacity: 1;
-}
-
-figcaption {
-  /*Color*/
-  color: #888888;
-  
-  /*Text*/
-  font-size: 12px; 
-
-  /*Size*/
-  margin-top: 20px;
-}
-
-figure {
-  margin: 0 auto;
-  display: inline-block;
-}
-
+/* ==== 
+ * Adaptation 
+ * ==== */
 
 @media (max-width: 786px) {
+  /* ~~ Table ~~ */
   .pages-table {
     display: block;
     overflow-x: auto;
@@ -364,23 +458,26 @@ figure {
     font-size: 13.9px;
   }
 
+  /* ~~ Heading ~~*/
   h1 {
-    font-size: 17.2px;
+    font-size: 18px;
   }
 
   h2 {
-    font-size: 14.45px;
+    font-size: 17px;
   }
 
   h3 {
-    font-size: 13.9px;
+    font-size: 16px;
   }
 
+  /* ~~ Link ~~ */
   a {
-    font-size: 13.2px;
+    font-size: 15px;
   }
 
+  /* ~~ Text ~~ */
   p {
-    font-size: 13px;
+    font-size: 14px;
   }
 }

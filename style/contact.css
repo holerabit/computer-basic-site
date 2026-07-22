@@ -1,239 +1,277 @@
-/*
+/* 
+ * ===
  * HTML and Body
+ * ===
  * */
+
 html {
-	/*Color for text and background*/
+	/* ~ Color ~ */
 	color: #eaeaea;
 	background-color: #0d1f0d;
-  /*Font*/
+
+  /* ~ Font ~ */
   font-family: 'Courier New', monospace;
 }
 
 body {
-  /*Avoiding gaps*/
+  /* ~ Aligments ~*/
   margin: 0;
   padding: 0;
 }
 
-
 /*
- *Header
+ * ===
+ * Header
+ * ===
  * */
 
 header {
-  /*Back color*/
+  /*~ Color ~ */
   background-color: #1f0d0d;
-  /*Text style*/
-  padding: 65px;
-  /*Display*/
+
+  /* ~ Display ~*/
   display: flex;
+
+  /* ~ Aligment ~ */
+  padding: 65px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*Style Text*/
-  justify-content: center;
   text-align: center;
-  /*Border*/
+
+  /* ~ Border ~ */
   border: 6px groove #c0392b;
   border-radius: 12px;
-  /*Smoothness*/
+
+  /* ~ Anumation ~ */
   transition: 
   border 2s ease, 
   opacity 1.2s ease,
   box-shadow 2s ease;
 
+  /* ~ Size ~ */
   margin: 15vw;
 
+  /* ~ Shadows ~ */
   box-shadow: 12px 12px 8px black;
 }
 
-/*Hover Header*/
+/* == Hover Heade == */
 header:hover {
   border: 8px groove #1a0a0a;
   opacity: 0.8;
   box-shadow: 8px 8px 6px black;
 }
 
-/*Main Text Header*/
+/* == Text Header == */
 header p {
   color: #dc143c;
 }
 
-/*Link Header*/
-header a { /*Main Link Header*/
+/* == Link Header == */
+header a { /* + Main Link Header*/
   color: #ff6b8a;
 }
 
-header a:visited { /*Visit Link Header*/
+header a:visited { /* + Visit Link Header*/
   color: #ff4d6d;
 }
 
-
 /*
- *Main
+ * ===
+ * Main
+ * ===
  * */
 
 main {
-  /*Back color*/
+  /* ~ Color ~ */
   background-color: #1a2a4a;
-  /*Display*/
+
+  /* ~ Display ~ */
   display: flex;
-  /*Element style*/
+
+  /* ~ Aligment ~ */
   justify-content: center;
-  /*Size*/
-  min-height: 260px;
-  /*Border*/
+
+  /* ~ Size ~ */
+  margin: 18vw;
+  min-height: 26vh;
+
+  /* ~ Border ~ */
   border: 10px ridge #1a2a4a;
   border-radius: 12px;
-  /*Soomthness*/
+
+  /* ~ Animation ~ */
   transition: 
   border 2s ease,  
   opacity 1.2s ease,
-  box-shadow 2s ease;
+  box-shadow 2s ease; 
 
-  margin: 18vw;
-
+  /* ~ Shadow ~ */
   box-shadow: 6px 6px 4px black;
 }
 
-/*Hover Main*/
+/* == Hover Main == */
 main:hover {
   border: 8px ridge #0a0a1a;
   opacity: 0.8;
   box-shadow: 4px 4px 2px black;
 }
 
-/*Link Main*/
-main a { /*Main link "Main"*/
+/* == Link Main == */
+main a { /* + Main link "Main"*/
   color: #c8f5c8;
-  display: grid;
-  gap: 7px;
-  margin-bottom: 20px;
+  gap: 25px;
+  display: flex;
+  margin-bottom: 40px;
 }
 
-main a:visited { /*Visit Link Main*/
+main a:visited { /* + Visit Link Main*/
   color: #b4f0b4;
 }
 
 
 /*
- *Footer
+ * ===
+ * Footer
+ * ===
  * */
 footer {
-  /*Back color*/
+  /* ~ Color ~ */
   background-color: #1a1500;
-  /*Element style*/
-  justify-content: center;
-  /*Size*/
-  height: 200px;
-  /*Border*/
+
+  /* ~ Aligment ~ */
+  text-align: center;
+
+  /* ~ Size ~ */
+  min-height: 22vh;
+  margin: 18vw;
+
+  /* ~ Border ~ */
   border: 6px solid #b8860b;
   border-radius: 12px;
-  /*Soomthness*/
+
+  /* ~ Animation ~ */
   transition: 
   border 2s ease,  
   opacity 1.2s ease,
   box-shadow 2s ease;
 
-  margin: 18vw;
-
+  /* ~ Shadows ~ */
   box-shadow: 7px 7px 6px black;
 }
 
-/*Hover Footer*/
+/* == Hover Footer == */
 footer:hover {
   border: 8px solid #ccaa00;
   opacity: 0.8;
   box-shadow: 5px 5px 4px black;
 }
 
-/*Main Text Footer*/
+/* == Text Footer == */
 footer p {
   color: #ffb300;
   text-align: center;
   margin-bottom: 3vw;
 }
 
-/*Style Mase Text*/
+/* = Style Text Footer = */
 .made-p::before {
   content: "/ ";
 }
 
-/*Link Footer*/
-footer a { /*Main Link Footer*/
+/* == Link Footer == */
+footer a { /* + Main Link Footer*/
   color: #ffd633;
 }
 
-footer a:visited { /*Visit Link Footer*/
+footer a:visited { /* + Visit Link Footer*/
   color: #ffcc00;
 }
 
-
 /*
- *Heading
+ * ===
+ * Heading
+ * ===
  * */
 
-/*H1*/
+/* == h1 Style == */
 h1 {
   color: #8b0a1a;
 }
 
-/*Before H1*/
+/* = Before h1 = */
 h1::before {
   content: "/// ";
 }
 
-/*H2*/
+/* == h2 Style == */
 h2 {
   color: #90ee90;
   margin-top: 70px;
 }
 
-/*Before H2*/
+/* = Before h2 = */
 h2::before {
   content: "// ";
 }
 
 /*
- *a
+ * ===
+ * Link
+ * ===
  * */
 
-/*Link a*/
+/* == Link STyle ==*/
 a {
   text-decoration: none;
   transition: color 1.2s ease;
 }
 
-/*Tip Link a*/
+/* = Hover Link = */
 a:hover {
   color: #444444;
 }
 
-/*Tab Link a*/
+/* = Focus Link = */
 a:focus {
   color: #ffffff;
   outline: none;
 }
 
-/*Before Link a*/
+/* = Before Link = */
 a::before {
   content: "✅";
 }
 
-@media (max-width: 786px) {
+
+/* 
+ * ===
+ * Adaptation
+ * ===
+ * */
+@media (max-width: 786px) { /* + Phone Adaptation*/
+  /* ~~ Header Text Adaptation ~~*/
   header p {
-    font-size: 11px;
+    font-size: 14px;
   }
-
+  /* ~~ Header Link Adaptation ~~ */
   header a {
-    font-size: 11px;
+    font-size: 15px;
   }
-
-  main{
-    text-align: center;
-  }
-
+  /* ~~ Main Link Adaptation ~~ */
   main a{
-    font-size: 12px;
+    font-size: 15px;
+  }
+
+  /* ~~ Footer Text Adaptation ~~ */
+  footer p {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  /* ~~ Footer Link Adaptation ~~ */
+  footer a {
+    font-size: 15px;
   }
 }
